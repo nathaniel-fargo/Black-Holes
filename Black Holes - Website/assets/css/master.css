@@ -1,0 +1,84 @@
+@import url("./fonts.css");
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(17, 16, 16);
+    color: rgb(209, 209, 203);
+    font-family: josefin;
+}
+h1 {
+    color: rgb(238, 233, 227);
+}
+a {
+    color: rgb(175, 223, 255);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: rgb(8, 8, 8);
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+.footer-text {
+    margin: 0;
+    padding: 20px 0;
+}
+.display-1 {
+    font-size: 200%;
+}
+.display-2 {
+    font-size: 500%;
+}
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+.text-shadow {
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+.no-shadow {
+    text-shadow: none;
+    box-shadow: none;
+}
+.image-content-box {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.image-content-box .image-content {
+    overflow: hidden;
+    width: 70%;
+    text-align: center;
+}
+.image-content-box .text-content {
+    width: 30%;
+    margin: auto 0;
+    padding: 20px 0;
+}
+.image-content img {
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .image-content-box .image-content {
+        width: 100%;
+        order: 2;
+    }
+    .image-content-box .text-content {
+        width: 100%;
+        order: 1;
+    }
+}
