@@ -1,10 +1,10 @@
 import UIKit
-class UniverseView: UIView, CustomView {
+class RenderView: UIView, CustomView {
     
     var delegate: MasterDelegate!
     // Create the universe
     var universe: Universe!
-    var universeDisplay: UniverseDisplay!
+    var universeDisplay: UniverseRenderer!
     var options: UniverseOptions!
     // Shows loading
     var loaderView: UILabel!
@@ -14,7 +14,7 @@ class UniverseView: UIView, CustomView {
         self.delegate = delegate
         self.options = options
         universe = options.getUniverse()
-        universeDisplay = UniverseDisplay(noiseMapResolution: options.imageResolution * 8)
+        universeDisplay = UniverseRenderer(noiseMapResolution: options.imageResolution * 8)
         raysToLoad = universe.viewRays.count
         loaderView = UILabel(frame: frame)
         loaderView.textColor = #colorLiteral(red: 0.5568627450980392, green: 0.35294117647058826, blue: 0.9686274509803922, alpha: 1.0)

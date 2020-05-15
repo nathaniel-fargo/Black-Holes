@@ -1,7 +1,7 @@
 import UIKit
 import GameKit // for noise
 
-public class UniverseDisplay {
+public class UniverseRenderer {
     
     var noiseSource: GKNoiseSource
     var noiseMap: GKNoiseMap
