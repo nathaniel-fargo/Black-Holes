@@ -30,10 +30,6 @@
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/DisplayUniverse.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
 				<string>UserModules/Program.playgroundmodule/Sources/Math.swift</string>
 			</dict>
 			<dict>
@@ -58,10 +54,6 @@
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/UniverseView.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
 				<string>UserModules/Program.playgroundmodule/Sources/Options.swift</string>
 			</dict>
 			<dict>
@@ -83,6 +75,14 @@
 			<dict>
 				<key>File</key>
 				<string>UserModules/Program.playgroundmodule/Sources/AboutView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/RenderUniverse.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/RenderView.swift</string>
 			</dict>
 		</array>
 		<key>Modified</key>

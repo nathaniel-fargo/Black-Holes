@@ -38,9 +38,11 @@ public class MasterView: UIView, MasterDelegate, CustomView {
     
     func loadSetupView() {
         removeCurrentView()
-        if let theView = setupView {
-            addSubview(theView)
-            currentView = theView
+        if setupView != nil {
+            setupView!.frame = frame
+            setupView!.updateFrame()
+            addSubview(setupView!)
+            currentView = setupView!
         } else {
             setupView = SetupView(frame: frame)
             setupView!.setup(self)
@@ -49,7 +51,7 @@ public class MasterView: UIView, MasterDelegate, CustomView {
     }
     func loadRenderView(with options: UniverseOptions) {
         removeCurrentView()
-        let renderView = UniverseView(frame: frame)
+        let renderView = RenderView(frame: frame)
         renderView.setup(self, options: options)
         addSubview(renderView)
         currentView = renderView
