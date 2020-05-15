@@ -68,7 +68,7 @@ struct SwiftUIDisplayView: View {
     
 }
 
-
+// This is the part where I thank the Apple Developer Forums instead of Stack Overflow for once lol
 struct ShareSheet: UIViewControllerRepresentable {
     typealias Callback = (_ activityType: UIActivity.ActivityType?, _ completed: Bool, _ returnedItems: [Any]?, _ error: Error?) -> Void
       
