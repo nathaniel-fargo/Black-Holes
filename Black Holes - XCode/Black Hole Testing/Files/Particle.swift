@@ -52,8 +52,8 @@ public class Particle {
     }
     
     // Functions
-    public func update() {
-        velocity += acceleration
+    public func update(factor: Float) {
+        velocity += acceleration * factor
         position += velocity
         acceleration = Vector3.zero
     }

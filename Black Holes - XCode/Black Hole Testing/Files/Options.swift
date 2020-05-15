@@ -1,4 +1,4 @@
-
+import UIKit
 struct UniverseOptions {
     // This often breaks the program so I just set it to false
     let showUniverseCreation: Bool = false
@@ -18,7 +18,12 @@ struct UniverseOptions {
     var doBlackHoles: Bool
     // Shows the ring or not
     var showRing: Bool
-    init (universeUpdateType updateType: UniverseUpdateType, universeRadius radius: Float, imageResolution resolution: Float, blackHoleDistance: Float, cameraViewFieldAngle viewAngle: Float, ringAngleInDegrees: Double, doBlackHoles: Bool, showRing: Bool) {
+    // How fast the simulation runs
+    var simulationSpeed: Float
+    // Color of the ring
+    var ringColor: UIColor
+    
+    init (universeUpdateType updateType: UniverseUpdateType, universeRadius radius: Float, imageResolution resolution: Float, blackHoleDistance: Float, cameraViewFieldAngle viewAngle: Float, ringAngleInDegrees: Double, doBlackHoles: Bool, showRing: Bool, simulationSpeed: Float, ringColor: UIColor) {
         universeUpdateType = updateType
         self.radius = radius
         imageResolution = Double(resolution)
@@ -27,11 +32,13 @@ struct UniverseOptions {
         ringAngle = ringAngleInDegrees
         self.doBlackHoles = doBlackHoles
         self.showRing = showRing
+        self.simulationSpeed = simulationSpeed
+        self.ringColor = ringColor
     }
     init() {
-        self.init(universeUpdateType: .together, universeRadius: 2000, imageResolution: 256, blackHoleDistance: 1000, cameraViewFieldAngle: 1, ringAngleInDegrees: 357, doBlackHoles: true, showRing: true)
+        self.init(universeUpdateType: .together, universeRadius: 2000, imageResolution: 256, blackHoleDistance: 1000, cameraViewFieldAngle: 1, ringAngleInDegrees: 357, doBlackHoles: true, showRing: true, simulationSpeed: 0.1, ringColor: .orange)
     }
     func getUniverse() -> Universe {
-        return Universe(radius: radius, blackHolePosition: Vector3(0, 0, blackHoleDistance), resolution: Float(imageResolution), rotateFactor: viewAngle, ringAngleInDegrees: ringAngle, doBlackHoles: doBlackHoles, showRing: showRing)
+        return Universe(radius: radius, blackHolePosition: Vector3(0, 0, blackHoleDistance), resolution: Float(imageResolution), rotateFactor: viewAngle, ringAngleInDegrees: ringAngle, doBlackHoles: doBlackHoles, showRing: showRing, simulationSpeed: simulationSpeed)
     }
 }

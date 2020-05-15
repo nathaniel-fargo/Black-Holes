@@ -7,31 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F19A082C246F456F0075A700 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A081D246F456F0075A700 /* Math.swift */; };
+		F19A082D246F456F0075A700 /* BlackHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A081E246F456F0075A700 /* BlackHole.swift */; };
+		F19A082E246F456F0075A700 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A081F246F456F0075A700 /* SetupView.swift */; };
+		F19A082F246F456F0075A700 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0820246F456F0075A700 /* MasterView.swift */; };
+		F19A0830246F456F0075A700 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0821246F456F0075A700 /* Universe.swift */; };
+		F19A0831246F456F0075A700 /* WarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0822246F456F0075A700 /* WarningView.swift */; };
+		F19A0832246F456F0075A700 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0823246F456F0075A700 /* Ring.swift */; };
+		F19A0833246F456F0075A700 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0824246F456F0075A700 /* Ray.swift */; };
+		F19A0834246F456F0075A700 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0825246F456F0075A700 /* Options.swift */; };
+		F19A0835246F456F0075A700 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0826246F456F0075A700 /* Particle.swift */; };
+		F19A0836246F456F0075A700 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0827246F456F0075A700 /* Vector3.swift */; };
+		F19A0837246F456F0075A700 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0828246F456F0075A700 /* AboutView.swift */; };
+		F19A0838246F456F0075A700 /* RenderUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0829246F456F0075A700 /* RenderUniverse.swift */; };
+		F19A0839246F456F0075A700 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A082A246F456F0075A700 /* DisplayView.swift */; };
+		F19A083A246F456F0075A700 /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A082B246F456F0075A700 /* RenderView.swift */; };
 		F1C4A1EF246AE88700BB6DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A1EE246AE88700BB6DB4 /* AppDelegate.swift */; };
 		F1C4A1F1246AE88700BB6DB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A1F0246AE88700BB6DB4 /* SceneDelegate.swift */; };
 		F1C4A1F3246AE88700BB6DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A1F2246AE88700BB6DB4 /* ViewController.swift */; };
 		F1C4A1F6246AE88700BB6DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C4A1F4246AE88700BB6DB4 /* Main.storyboard */; };
 		F1C4A1F8246AE88800BB6DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C4A1F7246AE88800BB6DB4 /* Assets.xcassets */; };
 		F1C4A1FB246AE88800BB6DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C4A1F9246AE88800BB6DB4 /* LaunchScreen.storyboard */; };
-		F1E3BCAF246F13690053762C /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA0246F13680053762C /* Universe.swift */; };
-		F1E3BCB0246F13690053762C /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA1246F13680053762C /* Ray.swift */; };
-		F1E3BCB1246F13690053762C /* BlackHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA2246F13680053762C /* BlackHole.swift */; };
-		F1E3BCB2246F13690053762C /* README.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA3246F13680053762C /* README.swift */; };
-		F1E3BCB3246F13690053762C /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA4246F13680053762C /* SetupView.swift */; };
-		F1E3BCB4246F13690053762C /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA5246F13680053762C /* Options.swift */; };
-		F1E3BCB5246F13690053762C /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA6246F13680053762C /* Vector3.swift */; };
-		F1E3BCB6246F13690053762C /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA7246F13680053762C /* Ring.swift */; };
-		F1E3BCB7246F13690053762C /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA8246F13680053762C /* Math.swift */; };
-		F1E3BCB8246F13690053762C /* UniverseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA9246F13680053762C /* UniverseView.swift */; };
-		F1E3BCB9246F13690053762C /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAA246F13690053762C /* DisplayView.swift */; };
-		F1E3BCBA246F13690053762C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAB246F13690053762C /* AboutView.swift */; };
-		F1E3BCBB246F13690053762C /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAC246F13690053762C /* Particle.swift */; };
-		F1E3BCBC246F13690053762C /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAD246F13690053762C /* MasterView.swift */; };
-		F1E3BCBD246F13690053762C /* DisplayUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAE246F13690053762C /* DisplayUniverse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F189AB3C246C662300BCC0DE /* Black Hole Testing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Black Hole Testing.entitlements"; sourceTree = "<group>"; };
+		F19A081D246F456F0075A700 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		F19A081E246F456F0075A700 /* BlackHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackHole.swift; sourceTree = "<group>"; };
+		F19A081F246F456F0075A700 /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		F19A0820246F456F0075A700 /* MasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		F19A0821246F456F0075A700 /* Universe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
+		F19A0822246F456F0075A700 /* WarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarningView.swift; sourceTree = "<group>"; };
+		F19A0823246F456F0075A700 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		F19A0824246F456F0075A700 /* Ray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		F19A0825246F456F0075A700 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		F19A0826246F456F0075A700 /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		F19A0827246F456F0075A700 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		F19A0828246F456F0075A700 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F19A0829246F456F0075A700 /* RenderUniverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderUniverse.swift; sourceTree = "<group>"; };
+		F19A082A246F456F0075A700 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		F19A082B246F456F0075A700 /* RenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
 		F1C4A1EB246AE88700BB6DB4 /* Black Hole Render.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Hole Render.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C4A1EE246AE88700BB6DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1C4A1F0246AE88700BB6DB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,21 +55,6 @@
 		F1C4A1F7246AE88800BB6DB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1C4A1FA246AE88800BB6DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1C4A1FC246AE88800BB6DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1E3BCA0246F13680053762C /* Universe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
-		F1E3BCA1246F13680053762C /* Ray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
-		F1E3BCA2246F13680053762C /* BlackHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackHole.swift; sourceTree = "<group>"; };
-		F1E3BCA3246F13680053762C /* README.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = README.swift; sourceTree = "<group>"; };
-		F1E3BCA4246F13680053762C /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
-		F1E3BCA5246F13680053762C /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
-		F1E3BCA6246F13680053762C /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
-		F1E3BCA7246F13680053762C /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
-		F1E3BCA8246F13680053762C /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
-		F1E3BCA9246F13680053762C /* UniverseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniverseView.swift; sourceTree = "<group>"; };
-		F1E3BCAA246F13690053762C /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
-		F1E3BCAB246F13690053762C /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		F1E3BCAC246F13690053762C /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
-		F1E3BCAD246F13690053762C /* MasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
-		F1E3BCAE246F13690053762C /* DisplayUniverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayUniverse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,21 +135,21 @@
 		F1C4A206246AE8E700BB6DB4 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				F1E3BCAB246F13690053762C /* AboutView.swift */,
-				F1E3BCA2246F13680053762C /* BlackHole.swift */,
-				F1E3BCAE246F13690053762C /* DisplayUniverse.swift */,
-				F1E3BCAA246F13690053762C /* DisplayView.swift */,
-				F1E3BCAD246F13690053762C /* MasterView.swift */,
-				F1E3BCA8246F13680053762C /* Math.swift */,
-				F1E3BCA5246F13680053762C /* Options.swift */,
-				F1E3BCAC246F13690053762C /* Particle.swift */,
-				F1E3BCA1246F13680053762C /* Ray.swift */,
-				F1E3BCA3246F13680053762C /* README.swift */,
-				F1E3BCA7246F13680053762C /* Ring.swift */,
-				F1E3BCA4246F13680053762C /* SetupView.swift */,
-				F1E3BCA0246F13680053762C /* Universe.swift */,
-				F1E3BCA9246F13680053762C /* UniverseView.swift */,
-				F1E3BCA6246F13680053762C /* Vector3.swift */,
+				F19A081D246F456F0075A700 /* Math.swift */,
+				F19A0827246F456F0075A700 /* Vector3.swift */,
+				F19A0826246F456F0075A700 /* Particle.swift */,
+				F19A0824246F456F0075A700 /* Ray.swift */,
+				F19A081E246F456F0075A700 /* BlackHole.swift */,
+				F19A0823246F456F0075A700 /* Ring.swift */,
+				F19A0821246F456F0075A700 /* Universe.swift */,
+				F19A0825246F456F0075A700 /* Options.swift */,
+				F19A0829246F456F0075A700 /* RenderUniverse.swift */,
+				F19A082B246F456F0075A700 /* RenderView.swift */,
+				F19A082A246F456F0075A700 /* DisplayView.swift */,
+				F19A0828246F456F0075A700 /* AboutView.swift */,
+				F19A081F246F456F0075A700 /* SetupView.swift */,
+				F19A0822246F456F0075A700 /* WarningView.swift */,
+				F19A0820246F456F0075A700 /* MasterView.swift */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -225,24 +225,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E3BCB2246F13690053762C /* README.swift in Sources */,
-				F1E3BCB9246F13690053762C /* DisplayView.swift in Sources */,
-				F1E3BCBC246F13690053762C /* MasterView.swift in Sources */,
+				F19A0839246F456F0075A700 /* DisplayView.swift in Sources */,
+				F19A0838246F456F0075A700 /* RenderUniverse.swift in Sources */,
+				F19A083A246F456F0075A700 /* RenderView.swift in Sources */,
+				F19A0835246F456F0075A700 /* Particle.swift in Sources */,
 				F1C4A1F3246AE88700BB6DB4 /* ViewController.swift in Sources */,
+				F19A082D246F456F0075A700 /* BlackHole.swift in Sources */,
+				F19A0830246F456F0075A700 /* Universe.swift in Sources */,
+				F19A0837246F456F0075A700 /* AboutView.swift in Sources */,
+				F19A082F246F456F0075A700 /* MasterView.swift in Sources */,
+				F19A0834246F456F0075A700 /* Options.swift in Sources */,
+				F19A0836246F456F0075A700 /* Vector3.swift in Sources */,
 				F1C4A1EF246AE88700BB6DB4 /* AppDelegate.swift in Sources */,
-				F1E3BCBA246F13690053762C /* AboutView.swift in Sources */,
-				F1E3BCAF246F13690053762C /* Universe.swift in Sources */,
-				F1E3BCB4246F13690053762C /* Options.swift in Sources */,
-				F1E3BCB8246F13690053762C /* UniverseView.swift in Sources */,
 				F1C4A1F1246AE88700BB6DB4 /* SceneDelegate.swift in Sources */,
-				F1E3BCB0246F13690053762C /* Ray.swift in Sources */,
-				F1E3BCB3246F13690053762C /* SetupView.swift in Sources */,
-				F1E3BCB5246F13690053762C /* Vector3.swift in Sources */,
-				F1E3BCB6246F13690053762C /* Ring.swift in Sources */,
-				F1E3BCBB246F13690053762C /* Particle.swift in Sources */,
-				F1E3BCB1246F13690053762C /* BlackHole.swift in Sources */,
-				F1E3BCB7246F13690053762C /* Math.swift in Sources */,
-				F1E3BCBD246F13690053762C /* DisplayUniverse.swift in Sources */,
+				F19A082E246F456F0075A700 /* SetupView.swift in Sources */,
+				F19A0832246F456F0075A700 /* Ring.swift in Sources */,
+				F19A082C246F456F0075A700 /* Math.swift in Sources */,
+				F19A0833246F456F0075A700 /* Ray.swift in Sources */,
+				F19A0831246F456F0075A700 /* WarningView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,19 +26,7 @@
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Ray.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Math.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Universe.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Particle.swift</string>
+				<string>UserModules/Program.playgroundmodule/Sources/AboutView.swift</string>
 			</dict>
 			<dict>
 				<key>File</key>
@@ -46,15 +34,7 @@
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Vector3.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Ring.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Options.swift</string>
+				<string>UserModules/Program.playgroundmodule/Sources/DisplayView.swift</string>
 			</dict>
 			<dict>
 				<key>File</key>
@@ -62,19 +42,19 @@
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/SetupView.swift</string>
+				<string>UserModules/Program.playgroundmodule/Sources/Math.swift</string>
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/README.swift</string>
+				<string>UserModules/Program.playgroundmodule/Sources/Options.swift</string>
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/DisplayView.swift</string>
+				<string>UserModules/Program.playgroundmodule/Sources/Particle.swift</string>
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/AboutView.swift</string>
+				<string>UserModules/Program.playgroundmodule/Sources/Ray.swift</string>
 			</dict>
 			<dict>
 				<key>File</key>
@@ -83,6 +63,26 @@
 			<dict>
 				<key>File</key>
 				<string>UserModules/Program.playgroundmodule/Sources/RenderView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/Ring.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/SetupView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/Universe.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/Vector3.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/WarningView.swift</string>
 			</dict>
 		</array>
 		<key>Modified</key>

@@ -21,8 +21,9 @@ public class Universe {
     var finalFrame: CGRect
     var doBlackHoles: Bool
     var showRing: Bool
+    var simulationSpeed: Float
     
-    public init(radius: Float, blackHolePosition: Vector3, resolution: Float, rotateFactor: Float, ringAngleInDegrees: Double, doBlackHoles: Bool, showRing: Bool) {
+    public init(radius: Float, blackHolePosition: Vector3, resolution: Float, rotateFactor: Float, ringAngleInDegrees: Double, doBlackHoles: Bool, showRing: Bool, simulationSpeed: Float) {
         // The limits of the world space
         self.radius = radius
         bounds = Vector3(radius, radius, radius)
@@ -37,6 +38,7 @@ public class Universe {
         ring = Ring(from: blackHole, angle: ringAngleInDegrees)
         self.doBlackHoles = doBlackHoles
         self.showRing = showRing
+        self.simulationSpeed = simulationSpeed
         // Create light rays
         createLightRays(resolution: resolution, rotateFactor: rotateFactor)
     }
@@ -102,7 +104,7 @@ public class Universe {
         if doBlackHoles {
             blackHole.interact(with: ray)
         }
-        ray.update()
+        ray.update(factor: simulationSpeed)
         if showRing {
             ring.check(particle: ray)
         }

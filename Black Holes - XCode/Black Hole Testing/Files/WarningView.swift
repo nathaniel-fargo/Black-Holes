@@ -1,6 +1,6 @@
 import UIKit
 
-class README: UIView, CustomView {
+class WarningView: UIView, CustomView {
     
     var delegate: MasterDelegate!
     

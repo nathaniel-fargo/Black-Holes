@@ -20,12 +20,7 @@ public class UniverseRenderer {
         return CGFloat(rawNoise)
     }
     
-    public func createImage(universe: Universe) -> UIImage {
-        // This sometimes fail so yeah
-        return createImage(from: universe)
-        
-    }
-    public func createImage(from universe: Universe) -> UIImage {
+    func createImage(from universe: Universe, with options: UniverseOptions) -> UIImage {
         let frame = universe.status == .finished ? universe.finalFrame : universe.frame
         let renderer = UIGraphicsImageRenderer(bounds: frame)
         let image: UIImage = renderer.image { (ctx) in
@@ -36,7 +31,7 @@ public class UniverseRenderer {
             case .awake:
                 return drawUniverse(on: context, with: universe)
             case .finished:
-                return drawFinalImage(on: context, with: universe)
+                return drawFinalImage(on: context, with: universe, and: options)
             }
         }
         return image
@@ -60,7 +55,7 @@ public class UniverseRenderer {
         }
         context.fillPath()
     }
-    func drawFinalImage(on context: CGContext, with universe: Universe) {
+    func drawFinalImage(on context: CGContext, with universe: Universe, and options: UniverseOptions) {
         let sizeOne = CGSize(width: 1, height: 1)
         
         universe.deadRays.forEach { (ray) in
@@ -79,7 +74,11 @@ public class UniverseRenderer {
                 let noise = getNoise(
                     at: distFactor * Float(noiseResolution), and: 0) * 2 + 0.5
                 let brightness = (noise / 4 + 0.75) * CGFloat(1.5 - distFactor)
-                context.setFillColor(red: brightness, green: brightness / 3, blue: 0, alpha: 1)
+                let rgb = options.ringColor.rgb()!
+                print(rgb)
+//                let rgb = options.ringColor.cgColor.components!
+                
+                context.setFillColor(red: rgb.red * brightness, green: rgb.green * brightness, blue: rgb.blue * brightness, alpha: 1)
             default:
                 context.setFillColor(#colorLiteral(red: 0.3411764705882353, green: 0.6235294117647059, blue: 0.16862745098039217, alpha: 1.0))
             }

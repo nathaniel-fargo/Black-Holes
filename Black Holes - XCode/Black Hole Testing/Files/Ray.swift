@@ -40,9 +40,9 @@ public class Ray: Particle /*, CustomPlaygroundDisplayConvertible */ {
         self.init(universeRadius: 1)
     }
     
-    override public func update() {
-        velocity += acceleration
-        velocity = velocity.normalized * SpeedOfLight
+    override public func update(factor: Float) {
+        velocity += acceleration * factor * factor
+        velocity = velocity.normalized * SpeedOfLight * factor
         acceleration = Vector3.zero
         position += velocity
         if (position.magnitude > universeRadius) {

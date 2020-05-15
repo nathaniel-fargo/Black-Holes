@@ -1,10 +1,11 @@
 import UIKit
+
 class RenderView: UIView, CustomView {
     
     var delegate: MasterDelegate!
     // Create the universe
     var universe: Universe!
-    var universeDisplay: UniverseRenderer!
+    var renderer: UniverseRenderer!
     var options: UniverseOptions!
     // Shows loading
     var loaderView: UILabel!
@@ -13,14 +14,20 @@ class RenderView: UIView, CustomView {
     func setup (_ delegate: MasterDelegate, options: UniverseOptions) {
         self.delegate = delegate
         self.options = options
-        universe = options.getUniverse()
-        universeDisplay = UniverseRenderer(noiseMapResolution: options.imageResolution * 8)
-        raysToLoad = universe.viewRays.count
+        renderer = UniverseRenderer(noiseMapResolution: options.imageResolution * 4)
         loaderView = UILabel(frame: frame)
-        loaderView.textColor = #colorLiteral(red: 0.5568627450980392, green: 0.35294117647058826, blue: 0.9686274509803922, alpha: 1.0)
+        loaderView.textColor = .blue
         loaderView.numberOfLines = 3
         loaderView.textAlignment = .center
+        loaderView.text = "Creating Universe..."
         addSubview(loaderView)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.createUniverse()
+        }
+    }
+    func createUniverse() {
+        universe = options.getUniverse()
+        raysToLoad = universe.viewRays.count
         runLoop()
     }
     func runLoop () {
@@ -31,10 +38,11 @@ class RenderView: UIView, CustomView {
     func update() {
         universe.update(updateType: options.universeUpdateType)
         iterations += 1
-        if (universe.status == .finished) {
+        if (universe.deadRays.count == raysToLoad) {
             loaderView.text = "Creating Final Image..."
-            
-            let universeImage = universeDisplay.createImage(universe: universe)
+        }
+        if (universe.status == .finished) {
+            let universeImage = renderer.createImage(from: universe, with: options)
             delegate.loadDisplayView(with: universeImage)
         } else {
             loaderView.text = "Frame: \(iterations)\n\(universe.deadRays.count)/\(raysToLoad!) rays loaded"

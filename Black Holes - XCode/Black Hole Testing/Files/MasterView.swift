@@ -1,39 +1,45 @@
 import UIKit
 import SwiftUI
 
+public enum MasterViewStartingPoint {
+    case warning
+    case setup
+}
 protocol CustomView: UIView {
     func updateFrame()
 }
 protocol MasterDelegate {
     func loadSetupView()
-    func loadREADME()
+    func loadWarningView()
     func loadRenderView(with options: UniverseOptions)
     func loadDisplayView(with image: UIImage)
 }
 public class MasterView: UIView, MasterDelegate, CustomView {
     
-    var previousFrame: CGRect?
+    var previousFrame: CGRect!
     var currentView: CustomView?
     
     var setupView: SetupView?
     
-    public func start() {
-        setup()
+    public func start(with startingPoint: MasterViewStartingPoint) {
+        backgroundColor = .black
+        switch startingPoint {
+        case .warning:
+            loadWarningView()
+        default:
+            loadSetupView()
+        }
+        previousFrame = frame
         checkView()
     }
     
-    func setup() {
-        backgroundColor = .black
-        loadREADME()
-        // loadSetupView()
-    }
     
-    func loadREADME() {
+    func loadWarningView() {
         removeCurrentView()
-        let readmeView = README(frame: frame)
-        readmeView.setup(self)
-        addSubview(readmeView)
-        currentView = readmeView
+        let warningView = WarningView(frame: frame)
+        warningView.setup(self)
+        addSubview(warningView)
+        currentView = warningView
     }
     
     func loadSetupView() {
@@ -74,17 +80,15 @@ public class MasterView: UIView, MasterDelegate, CustomView {
     }
     func checkView () {
         // Set loop
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { 
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.checkView()
         }
         // Check if needed
-        if let prev = previousFrame {
-            if frame != prev {
-                updateFrame()
-            } else {
-                return
-            }
+        if frame != previousFrame {
+            previousFrame = frame
+            updateFrame()
+        } else {
+            return
         }
-        previousFrame = frame
     }
 }
