@@ -17,8 +17,7 @@ public class UniverseDisplay {
     func getNoise(at x: Float, and y: Float) -> CGFloat {
         let divisor: Float = 1
         let rawNoise = noiseMap.value(at: vector_int2(x: Int32(x / divisor), y: Int32(y / divisor)))
-        let adjustedNoise = CGFloat(rawNoise + 1) / 2
-        return adjustedNoise * adjustedNoise
+        return CGFloat(rawNoise)
     }
     
     public func createImage(universe: Universe) -> UIImage {
@@ -64,8 +63,6 @@ public class UniverseDisplay {
     func drawFinalImage(on context: CGContext, with universe: Universe) {
         let sizeOne = CGSize(width: 1, height: 1)
         
-        print(noiseMap.value(at: vector_int2(x: 5, y: 5)))
-        
         universe.deadRays.forEach { (ray) in
             let pos = ray.position
             switch ray.status {
@@ -73,13 +70,15 @@ public class UniverseDisplay {
                 context.setFillColor(#colorLiteral(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
             case .infinity:
                 let brightness = getNoise(
-                    at: Float(Map(value: Double(atan2(pos.y, pos.z)), fromMin: -Double.pi * 2, fromMax: Double.pi * 2, toMin: 0, toMax: noiseResolution)),
-                    and: Float(Map(value: Double(atan2(pos.x, pos.z)), fromMin: -Double.pi * 2, fromMax: Double.pi * 2, toMin: 0, toMax: noiseResolution))
-                ) - 0.2
+                    at: Float(Map(value: Double(atan2(pos.y, pos.z)), fromMin: -Double.pi, fromMax: Double.pi, toMin: 0, toMax: noiseResolution)),
+                    and: Float(Map(value: Double(atan2(pos.x, pos.z)), fromMin: -Double.pi, fromMax: Double.pi, toMin: 0, toMax: noiseResolution))
+                ) * 2 - 1
                 context.setFillColor(gray: brightness, alpha: 1)
             case .ring:
-                let brightness = getNoise(
-                    at: Map(value: pos.magnitude, fromMin: universe.ring.innerRadius, fromMax: universe.ring.outerRadius, toMin: 0, toMax: Float(noiseResolution)), and: 0) * 2 + 0.5
+                let distFactor = Map(value: (universe.ring.position - pos).magnitude, fromMin: universe.ring.innerRadius, fromMax: universe.ring.outerRadius, toMin: 0, toMax: 1)
+                let noise = getNoise(
+                    at: distFactor * Float(noiseResolution), and: 0) * 2 + 0.5
+                let brightness = (noise / 4 + 0.75) * CGFloat(1.5 - distFactor)
                 context.setFillColor(red: brightness, green: brightness / 3, blue: 0, alpha: 1)
             default:
                 context.setFillColor(#colorLiteral(red: 0.3411764705882353, green: 0.6235294117647059, blue: 0.16862745098039217, alpha: 1.0))

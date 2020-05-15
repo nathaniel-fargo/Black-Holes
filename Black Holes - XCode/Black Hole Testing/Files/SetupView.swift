@@ -1,18 +1,40 @@
 import SwiftUI
 
+class SetupView: UIView, CustomView {
+    
+    var myView: UIView?
+    
+    func updateFrame() {
+        myView?.frame = frame
+    }
+    func setup(_ delegate: MasterDelegate) {
+        let swiftUISetupView = SwiftUISetupView(delegate: delegate)
+        let hc = UIHostingController(rootView: swiftUISetupView)
+        myView = hc.view
+        myView!.frame = frame
+        addSubview(myView!)
+    }
+}
 struct WhiteText: View {
-    
     var text: String
-    
     var body: some View {
         Text(text)
             .foregroundColor(.white)
+            .multilineTextAlignment(.center)
     }
 }
-
-struct SetupView: View {
+struct SwiftUISetupView: View {
+    @State private var sliderResolution: Double = 7
+    @State private var doBlackHoles: Bool = true
+    @State private var showRing: Bool = true
+    private var ringAngleValues = [0, 3, 10, 45, 60, 80, 90, 100, 120, 135, 170, 177]
+    @State private var ringAngleIndex: Double = 1
     
-    @State private var n: Double = 0
+    var delegate: MasterDelegate
+    
+    init(delegate: MasterDelegate) {
+        self.delegate = delegate
+    }
     
     var body: some View {
         ZStack {
@@ -23,21 +45,52 @@ struct SetupView: View {
                 .aspectRatio(contentMode: .fit)
                 .offset(x: 0, y: -50)
                 .colorMultiply(.init(white: 0.7))
+                .blur(radius: 5)
             VStack {
                 WhiteText(text: "Render a Black Hole")
-                    .font(.system(size: 50))
-                WhiteText(text: "Here you can customize how you would like to create your black hole")
-                    .font(.system(size: 50))
-                Slider(value: $n, in: -10...10, step: 1)
-                Text("\(n) is a number")
-                    .foregroundColor(.white)
-            }
+                    .font(.largeTitle)
+                WhiteText(text: "Settings")
+                    .font(.headline).padding(.bottom, 20)
+                Toggle(isOn: $doBlackHoles) {
+                    WhiteText(text: "Black Holes")
+                }
+                Toggle(isOn: $showRing) {
+                    WhiteText(text: "Show Accretion Disk")
+                }
+                HStack {
+                    WhiteText(text: "Resolution: \(round(pow(2, sliderResolution)))")
+                    Slider(value: $sliderResolution, in: 6...10, step: 1)
+                }
+                WhiteText(text: "The higher the resolution, the better the image, but the longer it takes. 128-512 recommended")
+                    .font(.footnote)
+                HStack {
+                    WhiteText(text: "Disk Angle: \(ringAngleValues[Int(ringAngleIndex)])")
+                    Slider(value: $ringAngleIndex, in: 0...Double(ringAngleValues.count - 1), step: 1)
+                }
+                Button(action: {
+                    self.loadRenderView()
+                }) {
+                    Text("Render!")
+                        .fontWeight(.bold)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(40)
+                        .foregroundColor(.white)
+                        .padding(10)
+                }
+            }.padding()
         }
     }
+    
+    func loadRenderView() {
+        var universeOptions = UniverseOptions()
+        universeOptions.imageResolution = pow(2, sliderResolution)
+        universeOptions.doBlackHoles = doBlackHoles
+        universeOptions.showRing = showRing
+        universeOptions.ringAngle = 180 - Double(ringAngleValues[Int(ringAngleIndex)])
+        delegate.loadRenderView(with: universeOptions)
+    }
+    
 }
 
-struct SetupView_Previews: PreviewProvider {
-    static var previews: some View {
-        SetupView()
-    }
-}
+

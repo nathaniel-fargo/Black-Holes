@@ -28,7 +28,7 @@ public class Ring {
     
     public init (from blackHole: BlackHole, angle: Double) {
         position = blackHole.position
-        innerRadius = blackHole.radius * 2.6
+        innerRadius = blackHole.radius * 1.5
         outerRadius = blackHole.radius * 6
         self.angle = Double(Int(angle + 360) % 360)
         angleRad = self.angle * Double.pi / 180
@@ -51,10 +51,10 @@ public class Ring {
     func checkStatus(of particle: Particle) -> RingStatus? {
         switch (angle) {
             case 0...45, 135...225, 315...360:
-                let yMark = Float(tan(angleRad)) * (particle.position.z - position.z)
+                let yMark = Float(tan(angleRad)) * (particle.position.z - position.z) + position.y
                 return particle.position.y > yMark ? .greater : .less
             case 45...135, 225...315:
-                let zMark = 1 / Float(tan(angleRad)) * (particle.position.y - position.y)
+                let zMark = 1 / Float(tan(angleRad)) * (particle.position.y - position.y) + position.z
                 return particle.position.z > zMark ? .greater : .less
             default:
                 return nil

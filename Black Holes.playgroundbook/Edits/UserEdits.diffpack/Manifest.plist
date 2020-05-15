@@ -76,6 +76,14 @@
 				<key>File</key>
 				<string>UserModules/Program.playgroundmodule/Sources/README.swift</string>
 			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/DisplayView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/AboutView.swift</string>
+			</dict>
 		</array>
 		<key>Modified</key>
 		<array>

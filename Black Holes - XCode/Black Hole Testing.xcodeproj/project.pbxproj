@@ -7,37 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F119FDD5246D8B8F00C1A257 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119FDD4246D8B8F00C1A257 /* SetupView.swift */; };
-		F16B5328246DD74200264CFF /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B5327246DD74200264CFF /* MasterView.swift */; };
-		F177FA8C246DE23500CAEF65 /* README.swift in Sources */ = {isa = PBXBuildFile; fileRef = F177FA8B246DE23500CAEF65 /* README.swift */; };
-		F189AB3B246C38BB00BCC0DE /* UniverseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189AB3A246C38BB00BCC0DE /* UniverseView.swift */; };
-		F19DC294246DAE7B00A618B0 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DC293246DAE7B00A618B0 /* Ring.swift */; };
-		F19DC296246DAEE000A618B0 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DC295246DAEE000A618B0 /* Options.swift */; };
-		F19DC298246DB92500A618B0 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DC297246DB92500A618B0 /* Math.swift */; };
 		F1C4A1EF246AE88700BB6DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A1EE246AE88700BB6DB4 /* AppDelegate.swift */; };
 		F1C4A1F1246AE88700BB6DB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A1F0246AE88700BB6DB4 /* SceneDelegate.swift */; };
 		F1C4A1F3246AE88700BB6DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A1F2246AE88700BB6DB4 /* ViewController.swift */; };
 		F1C4A1F6246AE88700BB6DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C4A1F4246AE88700BB6DB4 /* Main.storyboard */; };
 		F1C4A1F8246AE88800BB6DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C4A1F7246AE88800BB6DB4 /* Assets.xcassets */; };
 		F1C4A1FB246AE88800BB6DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C4A1F9246AE88800BB6DB4 /* LaunchScreen.storyboard */; };
-		F1C4A208246AE91C00BB6DB4 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A207246AE91C00BB6DB4 /* Ray.swift */; };
-		F1C4A20A246AEA3400BB6DB4 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A209246AEA3400BB6DB4 /* Vector3.swift */; };
-		F1C4A20C246AF1AA00BB6DB4 /* BlackHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A20B246AF1AA00BB6DB4 /* BlackHole.swift */; };
-		F1C4A20E246AF67300BB6DB4 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A20D246AF67300BB6DB4 /* Particle.swift */; };
-		F1C4A210246AFA2400BB6DB4 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A20F246AFA2400BB6DB4 /* Universe.swift */; };
-		F1C4A212246B01BD00BB6DB4 /* DisplayUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A211246B01BD00BB6DB4 /* DisplayUniverse.swift */; };
+		F1E3BCAF246F13690053762C /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA0246F13680053762C /* Universe.swift */; };
+		F1E3BCB0246F13690053762C /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA1246F13680053762C /* Ray.swift */; };
+		F1E3BCB1246F13690053762C /* BlackHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA2246F13680053762C /* BlackHole.swift */; };
+		F1E3BCB2246F13690053762C /* README.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA3246F13680053762C /* README.swift */; };
+		F1E3BCB3246F13690053762C /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA4246F13680053762C /* SetupView.swift */; };
+		F1E3BCB4246F13690053762C /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA5246F13680053762C /* Options.swift */; };
+		F1E3BCB5246F13690053762C /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA6246F13680053762C /* Vector3.swift */; };
+		F1E3BCB6246F13690053762C /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA7246F13680053762C /* Ring.swift */; };
+		F1E3BCB7246F13690053762C /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA8246F13680053762C /* Math.swift */; };
+		F1E3BCB8246F13690053762C /* UniverseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCA9246F13680053762C /* UniverseView.swift */; };
+		F1E3BCB9246F13690053762C /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAA246F13690053762C /* DisplayView.swift */; };
+		F1E3BCBA246F13690053762C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAB246F13690053762C /* AboutView.swift */; };
+		F1E3BCBB246F13690053762C /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAC246F13690053762C /* Particle.swift */; };
+		F1E3BCBC246F13690053762C /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAD246F13690053762C /* MasterView.swift */; };
+		F1E3BCBD246F13690053762C /* DisplayUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E3BCAE246F13690053762C /* DisplayUniverse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F119FDD4246D8B8F00C1A257 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
-		F16B5327246DD74200264CFF /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
-		F177FA8B246DE23500CAEF65 /* README.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.swift; sourceTree = "<group>"; };
-		F189AB3A246C38BB00BCC0DE /* UniverseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverseView.swift; sourceTree = "<group>"; };
 		F189AB3C246C662300BCC0DE /* Black Hole Testing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Black Hole Testing.entitlements"; sourceTree = "<group>"; };
-		F19DC293246DAE7B00A618B0 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
-		F19DC295246DAEE000A618B0 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
-		F19DC297246DB92500A618B0 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
-		F1C4A1EB246AE88700BB6DB4 /* Black Hole Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Hole Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C4A1EB246AE88700BB6DB4 /* Black Hole Render.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Hole Render.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C4A1EE246AE88700BB6DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1C4A1F0246AE88700BB6DB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F1C4A1F2246AE88700BB6DB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,12 +40,21 @@
 		F1C4A1F7246AE88800BB6DB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1C4A1FA246AE88800BB6DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1C4A1FC246AE88800BB6DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1C4A207246AE91C00BB6DB4 /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
-		F1C4A209246AEA3400BB6DB4 /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
-		F1C4A20B246AF1AA00BB6DB4 /* BlackHole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackHole.swift; sourceTree = "<group>"; };
-		F1C4A20D246AF67300BB6DB4 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
-		F1C4A20F246AFA2400BB6DB4 /* Universe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
-		F1C4A211246B01BD00BB6DB4 /* DisplayUniverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayUniverse.swift; sourceTree = "<group>"; };
+		F1E3BCA0246F13680053762C /* Universe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
+		F1E3BCA1246F13680053762C /* Ray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		F1E3BCA2246F13680053762C /* BlackHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackHole.swift; sourceTree = "<group>"; };
+		F1E3BCA3246F13680053762C /* README.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = README.swift; sourceTree = "<group>"; };
+		F1E3BCA4246F13680053762C /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		F1E3BCA5246F13680053762C /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		F1E3BCA6246F13680053762C /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		F1E3BCA7246F13680053762C /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		F1E3BCA8246F13680053762C /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		F1E3BCA9246F13680053762C /* UniverseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniverseView.swift; sourceTree = "<group>"; };
+		F1E3BCAA246F13690053762C /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		F1E3BCAB246F13690053762C /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F1E3BCAC246F13690053762C /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		F1E3BCAD246F13690053762C /* MasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		F1E3BCAE246F13690053762C /* DisplayUniverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayUniverse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,7 @@
 		F1C4A1EC246AE88700BB6DB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F1C4A1EB246AE88700BB6DB4 /* Black Hole Testing.app */,
+				F1C4A1EB246AE88700BB6DB4 /* Black Hole Render.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,19 +135,21 @@
 		F1C4A206246AE8E700BB6DB4 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				F1C4A209246AEA3400BB6DB4 /* Vector3.swift */,
-				F1C4A20D246AF67300BB6DB4 /* Particle.swift */,
-				F1C4A207246AE91C00BB6DB4 /* Ray.swift */,
-				F1C4A20B246AF1AA00BB6DB4 /* BlackHole.swift */,
-				F1C4A20F246AFA2400BB6DB4 /* Universe.swift */,
-				F1C4A211246B01BD00BB6DB4 /* DisplayUniverse.swift */,
-				F19DC293246DAE7B00A618B0 /* Ring.swift */,
-				F19DC295246DAEE000A618B0 /* Options.swift */,
-				F19DC297246DB92500A618B0 /* Math.swift */,
-				F189AB3A246C38BB00BCC0DE /* UniverseView.swift */,
-				F119FDD4246D8B8F00C1A257 /* SetupView.swift */,
-				F16B5327246DD74200264CFF /* MasterView.swift */,
-				F177FA8B246DE23500CAEF65 /* README.swift */,
+				F1E3BCAB246F13690053762C /* AboutView.swift */,
+				F1E3BCA2246F13680053762C /* BlackHole.swift */,
+				F1E3BCAE246F13690053762C /* DisplayUniverse.swift */,
+				F1E3BCAA246F13690053762C /* DisplayView.swift */,
+				F1E3BCAD246F13690053762C /* MasterView.swift */,
+				F1E3BCA8246F13680053762C /* Math.swift */,
+				F1E3BCA5246F13680053762C /* Options.swift */,
+				F1E3BCAC246F13690053762C /* Particle.swift */,
+				F1E3BCA1246F13680053762C /* Ray.swift */,
+				F1E3BCA3246F13680053762C /* README.swift */,
+				F1E3BCA7246F13680053762C /* Ring.swift */,
+				F1E3BCA4246F13680053762C /* SetupView.swift */,
+				F1E3BCA0246F13680053762C /* Universe.swift */,
+				F1E3BCA9246F13680053762C /* UniverseView.swift */,
+				F1E3BCA6246F13680053762C /* Vector3.swift */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -165,7 +171,7 @@
 			);
 			name = "Black Hole Testing";
 			productName = "Black Hole Testing";
-			productReference = F1C4A1EB246AE88700BB6DB4 /* Black Hole Testing.app */;
+			productReference = F1C4A1EB246AE88700BB6DB4 /* Black Hole Render.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -219,22 +225,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E3BCB2246F13690053762C /* README.swift in Sources */,
+				F1E3BCB9246F13690053762C /* DisplayView.swift in Sources */,
+				F1E3BCBC246F13690053762C /* MasterView.swift in Sources */,
 				F1C4A1F3246AE88700BB6DB4 /* ViewController.swift in Sources */,
-				F19DC294246DAE7B00A618B0 /* Ring.swift in Sources */,
-				F19DC296246DAEE000A618B0 /* Options.swift in Sources */,
-				F16B5328246DD74200264CFF /* MasterView.swift in Sources */,
-				F19DC298246DB92500A618B0 /* Math.swift in Sources */,
-				F177FA8C246DE23500CAEF65 /* README.swift in Sources */,
-				F189AB3B246C38BB00BCC0DE /* UniverseView.swift in Sources */,
-				F1C4A208246AE91C00BB6DB4 /* Ray.swift in Sources */,
 				F1C4A1EF246AE88700BB6DB4 /* AppDelegate.swift in Sources */,
-				F119FDD5246D8B8F00C1A257 /* SetupView.swift in Sources */,
-				F1C4A20E246AF67300BB6DB4 /* Particle.swift in Sources */,
-				F1C4A20A246AEA3400BB6DB4 /* Vector3.swift in Sources */,
+				F1E3BCBA246F13690053762C /* AboutView.swift in Sources */,
+				F1E3BCAF246F13690053762C /* Universe.swift in Sources */,
+				F1E3BCB4246F13690053762C /* Options.swift in Sources */,
+				F1E3BCB8246F13690053762C /* UniverseView.swift in Sources */,
 				F1C4A1F1246AE88700BB6DB4 /* SceneDelegate.swift in Sources */,
-				F1C4A210246AFA2400BB6DB4 /* Universe.swift in Sources */,
-				F1C4A20C246AF1AA00BB6DB4 /* BlackHole.swift in Sources */,
-				F1C4A212246B01BD00BB6DB4 /* DisplayUniverse.swift in Sources */,
+				F1E3BCB0246F13690053762C /* Ray.swift in Sources */,
+				F1E3BCB3246F13690053762C /* SetupView.swift in Sources */,
+				F1E3BCB5246F13690053762C /* Vector3.swift in Sources */,
+				F1E3BCB6246F13690053762C /* Ring.swift in Sources */,
+				F1E3BCBB246F13690053762C /* Particle.swift in Sources */,
+				F1E3BCB1246F13690053762C /* BlackHole.swift in Sources */,
+				F1E3BCB7246F13690053762C /* Math.swift in Sources */,
+				F1E3BCBD246F13690053762C /* DisplayUniverse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,8 +394,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tech.paradox42.apps.Black-Hole-Testing";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.paradox42.apps.BlackHoleRendering;
+				PRODUCT_NAME = "Black Hole Render";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -406,8 +414,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tech.paradox42.apps.Black-Hole-Testing";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.paradox42.apps.BlackHoleRendering;
+				PRODUCT_NAME = "Black Hole Render";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

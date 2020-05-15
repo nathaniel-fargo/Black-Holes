@@ -1,54 +1,88 @@
 import UIKit
 import SwiftUI
 
-
-public class MasterView: UIView {
+protocol CustomView: UIView {
+    func updateFrame()
+}
+protocol MasterDelegate {
+    func loadSetupView()
+    func loadREADME()
+    func loadRenderView(with options: UniverseOptions)
+    func loadDisplayView(with image: UIImage)
+}
+public class MasterView: UIView, MasterDelegate, CustomView {
     
+    var previousFrame: CGRect?
+    var currentView: CustomView?
     
-    public override var frame: CGRect {
-        didSet {
-            updateSubviews()
-        }
-    }
-    
-    var currentView: UIView?
-    
-    /*
-    var options = UniverseOptions(
-    universeUpdateType: .together,
-    universeRadius: 2000,
-    imageResolution: 512,
-    blackHolePosition: Vector3(0, 0, 1000),
-    cameraViewFieldAngle: 1,
-    ringAngleInDegrees: -3)
-     */
-    
-    var setupView: SetupView!
+    var setupView: SetupView?
     
     public func start() {
-        // Loops until the frame exists
-        if frame.size == CGSize.zero {
-            DispatchQueue.main.async {
-                self.start()
-            }
-            return
-        }
-        // Waits one extra second for things to get setup
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.setup()
-        }
+        setup()
+        checkView()
     }
     
     func setup() {
-        setupView = SetupView()
-        let vc = UIHostingController(rootView: setupView)
-        vc.view.frame = frame
-        currentView = vc.view
-        addSubview(currentView!)
+        backgroundColor = .black
+//        loadREADME()
+        loadSetupView()
     }
     
-    func updateSubviews() {
+    func loadREADME() {
+        removeCurrentView()
+        let readmeView = README(frame: frame)
+        readmeView.setup(self)
+        addSubview(readmeView)
+        currentView = readmeView
+    }
+    
+    func loadSetupView() {
+        removeCurrentView()
+        if let theView = setupView {
+            addSubview(theView)
+            currentView = theView
+        } else {
+            setupView = SetupView(frame: frame)
+            setupView!.setup(self)
+            loadSetupView()
+        }
+    }
+    func loadRenderView(with options: UniverseOptions) {
+        removeCurrentView()
+        let renderView = UniverseView(frame: frame)
+        renderView.setup(self, options: options)
+        addSubview(renderView)
+        currentView = renderView
+    }
+    func loadDisplayView(with image: UIImage) {
+        removeCurrentView()
+        let displayView = DisplayView(frame: frame)
+        displayView.setup(self, image: image)
+        addSubview(displayView)
+        currentView = displayView
+    }
+    func removeCurrentView() {
+        if let viewToRemove = currentView {
+            viewToRemove.removeFromSuperview()
+        }
+    }
+    func updateFrame() {
         currentView?.frame = frame
+        currentView?.updateFrame()
     }
-    
+    func checkView () {
+        // Set loop
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { 
+            self.checkView()
+        }
+        // Check if needed
+        if let prev = previousFrame {
+            if frame != prev {
+                updateFrame()
+            } else {
+                return
+            }
+        }
+        previousFrame = frame
+    }
 }
