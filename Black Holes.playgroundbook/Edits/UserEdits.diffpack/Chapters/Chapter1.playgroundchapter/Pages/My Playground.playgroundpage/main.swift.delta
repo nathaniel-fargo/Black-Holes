@@ -8,6 +8,7 @@
 			<key>ModifiedContent</key>
 			<string>// Because most of the code is modulated, all we need for this page is PlaygroundSupport
 import PlaygroundSupport
+
 /* ↘️↘️↘️⬇️⬇️⬇️↙️↙️↙️
  ↪️ READ THE FOLLOWING ↩️
  You need to turn off 🚫 "Show Results" under the timer icon ⏰ near the bottom right of your screen or else this program will not work ❌ or it will function at a reduced speed 🐌
@@ -19,8 +20,6 @@ import PlaygroundSupport
  
  */
 
-// This program (probably) won't run unless you turn off "show results"
-
 // Create a master view
 var masterView = MasterView()
 
@@ -29,13 +28,17 @@ masterView.start()
 
 // Set the liveView to the masterView
 PlaygroundPage.current.liveView = masterView
+
+// Make fullscreen
+PlaygroundPage.current.wantsFullScreenLiveView = true
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 764}</string>
+			<string>{0, 766}</string>
 			<key>OriginalContent</key>
-			<string></string>
+			<string>
+</string>
 			<key>OriginalRange</key>
-			<string>{0, 0}</string>
+			<string>{0, 1}</string>
 		</dict>
 	</array>
 	<key>File</key>

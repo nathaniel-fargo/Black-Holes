@@ -24,8 +24,8 @@ public class MasterView: UIView, MasterDelegate, CustomView {
     
     func setup() {
         backgroundColor = .black
-//        loadREADME()
-        loadSetupView()
+        loadREADME()
+        // loadSetupView()
     }
     
     func loadREADME() {
