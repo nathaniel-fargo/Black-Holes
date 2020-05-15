@@ -6,23 +6,37 @@
 	<array>
 		<dict>
 			<key>ModifiedContent</key>
-			<string>import UIKit
+			<string>// Because most of the code is modulated, all we need for this page is PlaygroundSupport
 import PlaygroundSupport
+/* ↘️↘️⬇️⬇️↙️↙️
+ ↪️ READ THE FOLLOWING ↩️
+ You need to turn off 🚫 "Show Results" under the timer icon ⏰ near the bottom right of your screen or else this program will not work ❌ or it will function at a reduced speed 🐌
+ 
+ I'm not totally sure why this happens, but I'm guessing it tries to log something that isn't loggable.
+ 
+ Thank you so much!
+     Cheers,
+     Nathaniel
+ 
+ */
 
 // This program (probably) won't run unless you turn off "show results"
 
+// Create a master view
 var masterView = MasterView()
-PlaygroundPage.current.liveView = masterView
 
+// Start the program
 masterView.start()
+
+// Set the liveView to the masterView
+PlaygroundPage.current.liveView = masterView
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 207}</string>
+			<string>{0, 750}</string>
 			<key>OriginalContent</key>
-			<string>
-</string>
+			<string></string>
 			<key>OriginalRange</key>
-			<string>{0, 1}</string>
+			<string>{0, 0}</string>
 		</dict>
 	</array>
 	<key>File</key>

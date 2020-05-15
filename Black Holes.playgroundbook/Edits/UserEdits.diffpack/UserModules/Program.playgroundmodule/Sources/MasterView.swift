@@ -8,6 +8,8 @@ public class MasterView: UIView {
     public override var frame: CGRect {
         didSet {
             updateSubviews()
+            loadSetupView()
+            
         }
     }
     
@@ -23,8 +25,6 @@ public class MasterView: UIView {
     ringAngleInDegrees: -3)
      */
     
-    var setupView: SetupView!
-    
     public func start() {
         // Loops until the frame exists
         if frame.size == CGSize.zero {
@@ -34,19 +34,37 @@ public class MasterView: UIView {
             return
         }
         // Waits one extra second for things to get setup
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.setup()
         }
     }
     
     func setup() {
-        setupView = SetupView()
+        loadREADME()
+//          loadSetupView()
+        
+    }
+    
+    func loadREADME() {
+        removeCurrentView()
+        var readmeView = README(frame: frame)
+        readmeView.setup()
+        addSubview(readmeView)
+    }
+    
+    func loadSetupView() {
+        removeCurrentView()
+        let setupView = SetupView()
         let vc = UIHostingController(rootView: setupView)
         vc.view.frame = frame
         currentView = vc.view
         addSubview(currentView!)
     }
-    
+    func removeCurrentView() {
+        if let viewToRemove = currentView {
+            viewToRemove.removeFromSuperview()
+        }
+    }
     func updateSubviews() {
         currentView?.frame = frame
     }
