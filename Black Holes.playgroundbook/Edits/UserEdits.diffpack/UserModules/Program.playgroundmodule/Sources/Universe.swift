@@ -1,3 +1,4 @@
+import Math
 import CoreGraphics
 
 public enum UniverseStatus {
@@ -16,7 +17,7 @@ public class Universe {
     var ring: Ring
     public var status: UniverseStatus = .awake
     var bounds: Vector3
-    var radius: Float
+    public var radius: Float
     var frame: CGRect
     var finalFrame: CGRect
     var doBlackHoles: Bool
@@ -83,7 +84,7 @@ public class Universe {
                 deadRays.append(firstRay)
                 viewRays.remove(at: 0)
             }
-        break
+            break
         case .together:
             // Used as a loop and remover
             viewRays.removeAll { (ray) -> Bool in
@@ -94,7 +95,7 @@ public class Universe {
                 }
                 return false
             }
-        break
+            break
         case .allAtOnce(let recursionType):
             self.update(updateType: recursionType)
             self.update(updateType: .allAtOnce(by: recursionType))

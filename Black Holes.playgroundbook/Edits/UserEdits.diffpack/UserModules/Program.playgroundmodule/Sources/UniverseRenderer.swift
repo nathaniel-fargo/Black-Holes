@@ -1,4 +1,6 @@
+
 import UIKit
+import Math
 import GameKit // for noise
 
 public class UniverseRenderer {
@@ -20,7 +22,7 @@ public class UniverseRenderer {
         return CGFloat(rawNoise)
     }
     
-    func createImage(from universe: Universe, with options: UniverseOptions) -> UIImage {
+    public func createImage(from universe: Universe, with options: UniverseOptions) -> UIImage {
         let frame = universe.status == .finished ? universe.finalFrame : universe.frame
         let renderer = UIGraphicsImageRenderer(bounds: frame)
         let image: UIImage = renderer.image { (ctx) in
@@ -57,7 +59,7 @@ public class UniverseRenderer {
     }
     func drawFinalImage(on context: CGContext, with universe: Universe, and options: UniverseOptions) {
         let sizeOne = CGSize(width: 1, height: 1)
-        
+        let rgb = options.ringColor.rgb()!
         universe.deadRays.forEach { (ray) in
             let pos = ray.position
             switch ray.status {
@@ -67,17 +69,14 @@ public class UniverseRenderer {
                 let brightness = getNoise(
                     at: Float(Map(value: Double(atan2(pos.y, pos.z)), fromMin: -Double.pi, fromMax: Double.pi, toMin: 0, toMax: noiseResolution)),
                     and: Float(Map(value: Double(atan2(pos.x, pos.z)), fromMin: -Double.pi, fromMax: Double.pi, toMin: 0, toMax: noiseResolution))
-                ) * 2 - 1
+                    ) * 2 - 1
                 context.setFillColor(gray: brightness, alpha: 1)
             case .ring:
                 let distFactor = Map(value: (universe.ring.position - pos).magnitude, fromMin: universe.ring.innerRadius, fromMax: universe.ring.outerRadius, toMin: 0, toMax: 1)
                 let noise = getNoise(
-                    at: distFactor * Float(noiseResolution), and: 0) * 2 + 0.5
+                    at: distFactor * Float(noiseResolution),
+                    and: Map(value: pos.magnitude, fromMin: 0, fromMax: universe.radius, toMin: 0, toMax: Float(noiseResolution))) * 2 + 0.5
                 let brightness = (noise / 4 + 0.75) * CGFloat(1.5 - distFactor)
-                let rgb = options.ringColor.rgb()!
-                print(rgb)
-//                let rgb = options.ringColor.cgColor.components!
-                
                 context.setFillColor(red: rgb.red * brightness, green: rgb.green * brightness, blue: rgb.blue * brightness, alpha: 1)
             default:
                 context.setFillColor(#colorLiteral(red: 0.3411764705882353, green: 0.6235294117647059, blue: 0.16862745098039217, alpha: 1.0))

@@ -1,3 +1,4 @@
+import Math
 import CoreGraphics
 
 /// Just like mass these values don't have to match in this simulated environment, as long as the work well together
@@ -5,11 +6,11 @@ public let SpeedOfLight: Float = 60
 
 public class Ray: Particle /*, CustomPlaygroundDisplayConvertible */ {
     /*
-    public var playgroundDescription: Any {
-        get {
-            return "Pos: \(position.x.rounded()), \(position.y.rounded()), \(position.z.rounded()), Vel: \(velocity.x.rounded()), \(velocity.y.rounded()), \(velocity.z.rounded())"
-        }
-    }*/
+     public var playgroundDescription: Any {
+     get {
+     return "Pos: \(position.x.rounded()), \(position.y.rounded()), \(position.z.rounded()), Vel: \(velocity.x.rounded()), \(velocity.y.rounded()), \(velocity.z.rounded())"
+     }
+     }*/
     
     /// While light rays don't have a "rest mass" they still have a mass by the equation "E = mc^2" While I could calculate that, the factors that go into calculation have no real effect on the simulation, so creating a result that works well in the simulation is more important to me than behind the scenes accuracy
     // var mass: Float = 1

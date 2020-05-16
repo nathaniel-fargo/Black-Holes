@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Because most of the code is modulated, all we need for this page is PlaygroundSupport
+import PlaygroundSupport
+
+// Create a master view, this is a UIView that manages every view
+var masterView = MasterView()
+
+// Start the program at the setup page
+masterView.start(with: .setup)
+
+// Set the liveView to the masterView
+PlaygroundPage.current.liveView = masterView
+
+// Make fullscreen
+PlaygroundPage.current.wantsFullScreenLiveView = true
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 440}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -26,27 +26,47 @@
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/AboutView.swift</string>
+				<string>UserModules/Views.playgroundmodule/Sources/SetupView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Views.playgroundmodule/Sources/AboutView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Views.playgroundmodule/Sources/MasterView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Views.playgroundmodule/Sources/WarningView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Views.playgroundmodule/Sources/RenderView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Views.playgroundmodule/Sources/DisplayView.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Math.playgroundmodule/Sources/Map.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Math.playgroundmodule/Sources/RGB.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Math.playgroundmodule/Sources/Vector3.swift</string>
+			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/Program.playgroundmodule/Sources/UniverseRenderer.swift</string>
 			</dict>
 			<dict>
 				<key>File</key>
 				<string>UserModules/Program.playgroundmodule/Sources/BlackHole.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/DisplayView.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/MasterView.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Math.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Options.swift</string>
 			</dict>
 			<dict>
 				<key>File</key>
@@ -58,11 +78,7 @@
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/RenderUniverse.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/RenderView.swift</string>
+				<string>UserModules/Program.playgroundmodule/Sources/Universe.swift</string>
 			</dict>
 			<dict>
 				<key>File</key>
@@ -70,19 +86,7 @@
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/SetupView.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Universe.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/Vector3.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
-				<string>UserModules/Program.playgroundmodule/Sources/WarningView.swift</string>
+				<string>UserModules/Program.playgroundmodule/Sources/UniverseOptions.swift</string>
 			</dict>
 		</array>
 		<key>Modified</key>

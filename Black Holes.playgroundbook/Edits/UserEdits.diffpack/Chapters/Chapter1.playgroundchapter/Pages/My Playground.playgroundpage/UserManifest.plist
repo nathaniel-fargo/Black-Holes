@@ -3,12 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>Name</key>
-	<string>Template Page</string>
-	<key>LiveViewEdgeToEdge</key>
-	<false/>
-	<key>LiveViewMode</key>
-	<string>HiddenByDefault</string>
-	<key>PlaygroundLoggingMode</key>
-	<string>Off</string>
+	<string>Main</string>
 </dict>
 </plist>

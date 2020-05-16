@@ -1,10 +1,11 @@
+import Math
 import CoreGraphics
 
 // Because we are working in a simulated environment with simulated units, this does not need to match real world physics
 public let GravitationalConstant: Float = 1
 
 public class BlackHole {
-
+    
     var position: Vector3
     var mass: Float = 200000
     

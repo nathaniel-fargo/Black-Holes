@@ -1,5 +1,6 @@
-public class Vector3 {
 
+public class Vector3 {
+    
     public var x: Float
     public var y: Float
     public var z: Float

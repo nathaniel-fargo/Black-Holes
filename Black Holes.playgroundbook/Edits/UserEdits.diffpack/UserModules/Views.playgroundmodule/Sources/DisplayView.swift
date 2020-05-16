@@ -38,7 +38,7 @@ struct SwiftUIDisplayView: View {
             VStack {
                 WhiteText(text: "Tada!")
                     .font(.largeTitle)
-                WhiteText(text: "You just made a black hole!")
+                WhiteText(text: "You just made a black hole")
                     .font(.headline)
                 Image(uiImage: blackHoleImage)
                     .resizable()
@@ -55,7 +55,7 @@ struct SwiftUIDisplayView: View {
                 Button(action: {
                     self.superview.delegate.loadSetupView()
                 }) {
-                    Text("Make another one!")
+                    Text("Make another one")
                         .padding()
                         .foregroundColor(.blue)
                 }

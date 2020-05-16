@@ -1,4 +1,5 @@
 import UIKit
+import Program
 
 class RenderView: UIView, CustomView {
     
@@ -14,20 +15,21 @@ class RenderView: UIView, CustomView {
     func setup (_ delegate: MasterDelegate, options: UniverseOptions) {
         self.delegate = delegate
         self.options = options
-        renderer = UniverseRenderer(noiseMapResolution: options.imageResolution * 4)
         loaderView = UILabel(frame: frame)
         loaderView.textColor = .blue
         loaderView.numberOfLines = 3
         loaderView.textAlignment = .center
         loaderView.text = "Creating Universe..."
+        loaderView.font = .monospacedSystemFont(ofSize: 30, weight: .bold)
         addSubview(loaderView)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.async {
             self.createUniverse()
         }
     }
     func createUniverse() {
         universe = options.getUniverse()
         raysToLoad = universe.viewRays.count
+        renderer = UniverseRenderer(noiseMapResolution: options.imageResolution * 4)
         runLoop()
     }
     func runLoop () {

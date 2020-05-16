@@ -1,3 +1,4 @@
+import Math
 import CoreGraphics
 
 var ParticleIDCounter: Int = 0

@@ -1,3 +1,4 @@
+import Math
 import CoreGraphics
 public enum RingStatus {
     case greater
@@ -50,14 +51,14 @@ public class Ring {
     }
     func checkStatus(of particle: Particle) -> RingStatus? {
         switch (angle) {
-            case 0...45, 135...225, 315...360:
-                let yMark = Float(tan(angleRad)) * (particle.position.z - position.z) + position.y
-                return particle.position.y > yMark ? .greater : .less
-            case 45...135, 225...315:
-                let zMark = 1 / Float(tan(angleRad)) * (particle.position.y - position.y) + position.z
-                return particle.position.z > zMark ? .greater : .less
-            default:
-                return nil
+        case 0...45, 135...225, 315...360:
+            let yMark = Float(tan(angleRad)) * (particle.position.z - position.z) + position.y
+            return particle.position.y > yMark ? .greater : .less
+        case 45...135, 225...315:
+            let zMark = 1 / Float(tan(angleRad)) * (particle.position.y - position.y) + position.z
+            return particle.position.z > zMark ? .greater : .less
+        default:
+            return nil
         }
     }
 }
