@@ -7,8 +7,10 @@
 	<key>LiveViewEdgeToEdge</key>
 	<true/>
 	<key>LiveViewMode</key>
-	<string>HiddenByDefault</string>
+	<string>VisibleByDefault</string>
 	<key>PlaygroundLoggingMode</key>
 	<string>Off</string>
+	<key>PosterReference</key>
+	<string>ImageReference.png</string>
 </dict>
 </plist>
