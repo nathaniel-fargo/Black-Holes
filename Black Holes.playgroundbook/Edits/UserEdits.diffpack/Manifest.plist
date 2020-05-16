@@ -38,10 +38,6 @@
 			</dict>
 			<dict>
 				<key>File</key>
-				<string>UserModules/Views.playgroundmodule/Sources/WarningView.swift</string>
-			</dict>
-			<dict>
-				<key>File</key>
 				<string>UserModules/Views.playgroundmodule/Sources/RenderView.swift</string>
 			</dict>
 			<dict>

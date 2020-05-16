@@ -3,7 +3,7 @@ import SwiftUI
 import Program
 
 public enum MasterViewStartingPoint {
-    case warning
+    case about
     case setup
 }
 protocol CustomView: UIView {
@@ -11,12 +11,12 @@ protocol CustomView: UIView {
 }
 protocol MasterDelegate {
     func loadSetupView()
-    func loadWarningView()
+    func loadAboutView()
     func loadRenderView(with options: UniverseOptions)
     func loadDisplayView(with image: UIImage)
 }
 public class MasterView: UIView, MasterDelegate, CustomView {
-    
+
     var previousFrame: CGRect!
     var currentView: CustomView?
     
@@ -25,22 +25,13 @@ public class MasterView: UIView, MasterDelegate, CustomView {
     public func start(with startingPoint: MasterViewStartingPoint) {
         backgroundColor = .black
         switch startingPoint {
-        case .warning:
-            loadWarningView()
-        default:
-            loadSetupView()
+            case .about:
+                loadAboutView()
+            default:
+                loadSetupView()
         }
         previousFrame = frame
         checkView()
-    }
-    
-    
-    func loadWarningView() {
-        removeCurrentView()
-        let warningView = WarningView(frame: frame)
-        warningView.setup(self)
-        addSubview(warningView)
-        currentView = warningView
     }
     
     func loadSetupView() {
@@ -56,6 +47,9 @@ public class MasterView: UIView, MasterDelegate, CustomView {
             loadSetupView()
         }
     }
+func loadAboutView() {
+    
+}
     func loadRenderView(with options: UniverseOptions) {
         removeCurrentView()
         let renderView = RenderView(frame: frame)

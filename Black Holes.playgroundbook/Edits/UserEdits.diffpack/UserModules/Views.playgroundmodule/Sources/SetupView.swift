@@ -58,10 +58,9 @@ struct SwiftUISetupView: View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            Image(uiImage: #imageLiteral(resourceName: "black-hole-nasa.jpg"))
+            Image(uiImage: #imageLiteral(resourceName: "BlackBlackHole.png"))
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-//                  .offset(x: 0, y: 0)
                 .colorMultiply(.init(white: 0.8))
                 .blur(radius: 8)
             VStack {
