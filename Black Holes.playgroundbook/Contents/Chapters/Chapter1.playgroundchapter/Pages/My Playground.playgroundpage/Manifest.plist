@@ -5,7 +5,7 @@
 	<key>Name</key>
 	<string>My Playground</string>
 	<key>LiveViewEdgeToEdge</key>
-	<false/>
+	<true/>
 	<key>LiveViewMode</key>
 	<string>HiddenByDefault</string>
 	<key>PlaygroundLoggingMode</key>
