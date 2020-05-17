@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F19A082C246F456F0075A700 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A081D246F456F0075A700 /* Math.swift */; };
-		F19A082D246F456F0075A700 /* BlackHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A081E246F456F0075A700 /* BlackHole.swift */; };
-		F19A082E246F456F0075A700 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A081F246F456F0075A700 /* SetupView.swift */; };
-		F19A082F246F456F0075A700 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0820246F456F0075A700 /* MasterView.swift */; };
-		F19A0830246F456F0075A700 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0821246F456F0075A700 /* Universe.swift */; };
-		F19A0831246F456F0075A700 /* WarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0822246F456F0075A700 /* WarningView.swift */; };
-		F19A0832246F456F0075A700 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0823246F456F0075A700 /* Ring.swift */; };
-		F19A0833246F456F0075A700 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0824246F456F0075A700 /* Ray.swift */; };
-		F19A0834246F456F0075A700 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0825246F456F0075A700 /* Options.swift */; };
-		F19A0835246F456F0075A700 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0826246F456F0075A700 /* Particle.swift */; };
-		F19A0836246F456F0075A700 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0827246F456F0075A700 /* Vector3.swift */; };
-		F19A0837246F456F0075A700 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0828246F456F0075A700 /* AboutView.swift */; };
-		F19A0838246F456F0075A700 /* RenderUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A0829246F456F0075A700 /* RenderUniverse.swift */; };
-		F19A0839246F456F0075A700 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A082A246F456F0075A700 /* DisplayView.swift */; };
-		F19A083A246F456F0075A700 /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19A082B246F456F0075A700 /* RenderView.swift */; };
+		F13A7775247091A300B8AF9F /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A7770247091A300B8AF9F /* RenderView.swift */; };
+		F13A7776247091A300B8AF9F /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A7771247091A300B8AF9F /* SetupView.swift */; };
+		F13A7777247091A300B8AF9F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A7772247091A300B8AF9F /* AboutView.swift */; };
+		F13A7778247091A300B8AF9F /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A7773247091A300B8AF9F /* MasterView.swift */; };
+		F13A7779247091A300B8AF9F /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A7774247091A300B8AF9F /* DisplayView.swift */; };
+		F13A7782247091CA00B8AF9F /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A777B247091C900B8AF9F /* Ring.swift */; };
+		F13A7783247091CA00B8AF9F /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A777C247091C900B8AF9F /* Particle.swift */; };
+		F13A7784247091CA00B8AF9F /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A777D247091C900B8AF9F /* Ray.swift */; };
+		F13A7785247091CA00B8AF9F /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A777E247091C900B8AF9F /* Universe.swift */; };
+		F13A7786247091CA00B8AF9F /* BlackHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A777F247091C900B8AF9F /* BlackHole.swift */; };
+		F13A7787247091CA00B8AF9F /* UniverseRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A7780247091C900B8AF9F /* UniverseRenderer.swift */; };
+		F13A7788247091CA00B8AF9F /* UniverseOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A7781247091CA00B8AF9F /* UniverseOptions.swift */; };
+		F13A778D247091E200B8AF9F /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A778A247091E200B8AF9F /* Map.swift */; };
+		F13A778E247091E200B8AF9F /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A778B247091E200B8AF9F /* RGB.swift */; };
+		F13A778F247091E200B8AF9F /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A778C247091E200B8AF9F /* Vector3.swift */; };
 		F1C4A1EF246AE88700BB6DB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A1EE246AE88700BB6DB4 /* AppDelegate.swift */; };
 		F1C4A1F1246AE88700BB6DB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A1F0246AE88700BB6DB4 /* SceneDelegate.swift */; };
 		F1C4A1F3246AE88700BB6DB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A1F2246AE88700BB6DB4 /* ViewController.swift */; };
@@ -31,22 +31,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F13A7770247091A300B8AF9F /* RenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		F13A7771247091A300B8AF9F /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		F13A7772247091A300B8AF9F /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F13A7773247091A300B8AF9F /* MasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		F13A7774247091A300B8AF9F /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		F13A777B247091C900B8AF9F /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		F13A777C247091C900B8AF9F /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		F13A777D247091C900B8AF9F /* Ray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		F13A777E247091C900B8AF9F /* Universe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
+		F13A777F247091C900B8AF9F /* BlackHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackHole.swift; sourceTree = "<group>"; };
+		F13A7780247091C900B8AF9F /* UniverseRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniverseRenderer.swift; sourceTree = "<group>"; };
+		F13A7781247091CA00B8AF9F /* UniverseOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniverseOptions.swift; sourceTree = "<group>"; };
+		F13A778A247091E200B8AF9F /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		F13A778B247091E200B8AF9F /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		F13A778C247091E200B8AF9F /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
 		F189AB3C246C662300BCC0DE /* Black Hole Testing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Black Hole Testing.entitlements"; sourceTree = "<group>"; };
-		F19A081D246F456F0075A700 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
-		F19A081E246F456F0075A700 /* BlackHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackHole.swift; sourceTree = "<group>"; };
-		F19A081F246F456F0075A700 /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
-		F19A0820246F456F0075A700 /* MasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
-		F19A0821246F456F0075A700 /* Universe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
-		F19A0822246F456F0075A700 /* WarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarningView.swift; sourceTree = "<group>"; };
-		F19A0823246F456F0075A700 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
-		F19A0824246F456F0075A700 /* Ray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
-		F19A0825246F456F0075A700 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
-		F19A0826246F456F0075A700 /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
-		F19A0827246F456F0075A700 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
-		F19A0828246F456F0075A700 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		F19A0829246F456F0075A700 /* RenderUniverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderUniverse.swift; sourceTree = "<group>"; };
-		F19A082A246F456F0075A700 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
-		F19A082B246F456F0075A700 /* RenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
 		F1C4A1EB246AE88700BB6DB4 /* Black Hole Render.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Hole Render.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C4A1EE246AE88700BB6DB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1C4A1F0246AE88700BB6DB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +68,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F13A776F2470916300B8AF9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F13A7772247091A300B8AF9F /* AboutView.swift */,
+				F13A7774247091A300B8AF9F /* DisplayView.swift */,
+				F13A7773247091A300B8AF9F /* MasterView.swift */,
+				F13A7770247091A300B8AF9F /* RenderView.swift */,
+				F13A7771247091A300B8AF9F /* SetupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F13A777A247091BA00B8AF9F /* Program */ = {
+			isa = PBXGroup;
+			children = (
+				F13A777F247091C900B8AF9F /* BlackHole.swift */,
+				F13A777C247091C900B8AF9F /* Particle.swift */,
+				F13A777D247091C900B8AF9F /* Ray.swift */,
+				F13A777B247091C900B8AF9F /* Ring.swift */,
+				F13A777E247091C900B8AF9F /* Universe.swift */,
+				F13A7781247091CA00B8AF9F /* UniverseOptions.swift */,
+				F13A7780247091C900B8AF9F /* UniverseRenderer.swift */,
+			);
+			path = Program;
+			sourceTree = "<group>";
+		};
+		F13A7789247091D500B8AF9F /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				F13A778A247091E200B8AF9F /* Map.swift */,
+				F13A778B247091E200B8AF9F /* RGB.swift */,
+				F13A778C247091E200B8AF9F /* Vector3.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
 		F1C4A1E2246AE88700BB6DB4 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				F189AB3C246C662300BCC0DE /* Black Hole Testing.entitlements */,
-				F1C4A206246AE8E700BB6DB4 /* Files */,
+				F1C4A206246AE8E700BB6DB4 /* Sources */,
 				F1C4A204246AE8C300BB6DB4 /* View */,
 				F1C4A205246AE8D300BB6DB4 /* Controller */,
 				F1C4A203246AE8B300BB6DB4 /* Delegates */,
@@ -132,26 +168,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		F1C4A206246AE8E700BB6DB4 /* Files */ = {
+		F1C4A206246AE8E700BB6DB4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F19A081D246F456F0075A700 /* Math.swift */,
-				F19A0827246F456F0075A700 /* Vector3.swift */,
-				F19A0826246F456F0075A700 /* Particle.swift */,
-				F19A0824246F456F0075A700 /* Ray.swift */,
-				F19A081E246F456F0075A700 /* BlackHole.swift */,
-				F19A0823246F456F0075A700 /* Ring.swift */,
-				F19A0821246F456F0075A700 /* Universe.swift */,
-				F19A0825246F456F0075A700 /* Options.swift */,
-				F19A0829246F456F0075A700 /* RenderUniverse.swift */,
-				F19A082B246F456F0075A700 /* RenderView.swift */,
-				F19A082A246F456F0075A700 /* DisplayView.swift */,
-				F19A0828246F456F0075A700 /* AboutView.swift */,
-				F19A081F246F456F0075A700 /* SetupView.swift */,
-				F19A0822246F456F0075A700 /* WarningView.swift */,
-				F19A0820246F456F0075A700 /* MasterView.swift */,
+				F13A7789247091D500B8AF9F /* Math */,
+				F13A777A247091BA00B8AF9F /* Program */,
+				F13A776F2470916300B8AF9F /* Views */,
 			);
-			path = Files;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,24 +249,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19A0839246F456F0075A700 /* DisplayView.swift in Sources */,
-				F19A0838246F456F0075A700 /* RenderUniverse.swift in Sources */,
-				F19A083A246F456F0075A700 /* RenderView.swift in Sources */,
-				F19A0835246F456F0075A700 /* Particle.swift in Sources */,
+				F13A778E247091E200B8AF9F /* RGB.swift in Sources */,
 				F1C4A1F3246AE88700BB6DB4 /* ViewController.swift in Sources */,
-				F19A082D246F456F0075A700 /* BlackHole.swift in Sources */,
-				F19A0830246F456F0075A700 /* Universe.swift in Sources */,
-				F19A0837246F456F0075A700 /* AboutView.swift in Sources */,
-				F19A082F246F456F0075A700 /* MasterView.swift in Sources */,
-				F19A0834246F456F0075A700 /* Options.swift in Sources */,
-				F19A0836246F456F0075A700 /* Vector3.swift in Sources */,
+				F13A7783247091CA00B8AF9F /* Particle.swift in Sources */,
+				F13A778D247091E200B8AF9F /* Map.swift in Sources */,
 				F1C4A1EF246AE88700BB6DB4 /* AppDelegate.swift in Sources */,
+				F13A7778247091A300B8AF9F /* MasterView.swift in Sources */,
+				F13A7775247091A300B8AF9F /* RenderView.swift in Sources */,
+				F13A7788247091CA00B8AF9F /* UniverseOptions.swift in Sources */,
+				F13A7787247091CA00B8AF9F /* UniverseRenderer.swift in Sources */,
+				F13A7776247091A300B8AF9F /* SetupView.swift in Sources */,
+				F13A7785247091CA00B8AF9F /* Universe.swift in Sources */,
+				F13A7779247091A300B8AF9F /* DisplayView.swift in Sources */,
+				F13A7777247091A300B8AF9F /* AboutView.swift in Sources */,
+				F13A7786247091CA00B8AF9F /* BlackHole.swift in Sources */,
+				F13A7782247091CA00B8AF9F /* Ring.swift in Sources */,
+				F13A7784247091CA00B8AF9F /* Ray.swift in Sources */,
+				F13A778F247091E200B8AF9F /* Vector3.swift in Sources */,
 				F1C4A1F1246AE88700BB6DB4 /* SceneDelegate.swift in Sources */,
-				F19A082E246F456F0075A700 /* SetupView.swift in Sources */,
-				F19A0832246F456F0075A700 /* Ring.swift in Sources */,
-				F19A082C246F456F0075A700 /* Math.swift in Sources */,
-				F19A0833246F456F0075A700 /* Ray.swift in Sources */,
-				F19A0831246F456F0075A700 /* WarningView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
