@@ -12,6 +12,8 @@ class RenderView: UIView, CustomView {
     var loaderView: UILabel!
     var raysToLoad: Int!
     var iterations: Int = 0
+    var runTimer: Timer?
+    
     func setup (_ delegate: MasterDelegate, options: UniverseOptions) {
         self.delegate = delegate
         self.options = options
@@ -33,24 +35,28 @@ class RenderView: UIView, CustomView {
         renderer = UniverseRenderer(noiseMapResolution: options.imageResolution * 4)
         runLoop()
     }
-    func runLoop () {
-        DispatchQueue.main.async {
-            self.update()
-        }
-    }
-    func update() {
-        universe.update(updateType: options.universeUpdateType)
-        iterations += 1
-        if (universe.deadRays.count == raysToLoad) {
-            loaderView.text = "Creating Final Image..."
-        }
+    func updateUI() {
         if (universe.status == .finished) {
-            let universeImage = renderer.createImage(from: universe, with: options)
-            delegate.loadDisplayView(with: universeImage)
+            loaderView.text = "Creating Final Image..."
         } else {
             loaderView.text = "Frame: \(iterations)\n\(universe.deadRays.count)/\(raysToLoad!) rays loaded"
-            runLoop()
         }
+    }
+    @objc func update() {
+        universe.update(updateType: options.universeUpdateType)
+        iterations += 1
+        if (universe.status == .finished) {
+            let universeImage = renderer.createImage(from: universe, with: options)
+            runTimer?.invalidate()
+            delegate.loadDisplayView(with: universeImage)
+        }
+        DispatchQueue.main.async {
+            self.updateUI()
+        }
+    }
+    func runLoop () {
+        runTimer = Timer(timeInterval: 0.01, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        RunLoop.current.add(runTimer!, forMode: .default)
     }
     func updateFrame() {
         loaderView.frame = frame

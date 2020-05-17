@@ -122,6 +122,8 @@ struct SwiftUISetupView: View {
                         .foregroundColor(.white)
                         .padding(3)
                 }
+                WhiteText(text: "This can take a minute to load, be patient")
+                    .font(.footnote)
                 Button(action: {
                     self.delegate.loadAboutView()
                 }) {
