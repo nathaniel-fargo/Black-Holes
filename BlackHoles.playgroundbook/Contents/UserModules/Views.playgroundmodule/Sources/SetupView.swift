@@ -92,9 +92,9 @@ struct SwiftUISetupView: View {
                             Slider(value: $ringAngleIndex, in: 0...Double(ringAngleValues.count - 1), step: 1)
                         }
                         HStack {
-                            WhiteText(text: "Simulation Speed: \(Int(simulationSpeed * 5 - 1))")
+                            WhiteText(text: "Simulation Speed: \(Int(simulationSpeed * 5))")
                                 .scaledToFit()
-                            Slider(value: $simulationSpeed, in: 0.4...1.8, step: 0.2)
+                            Slider(value: $simulationSpeed, in: 0.2...1.8, step: 0.2)
                         }
                         WhiteText(text: "Lower values take longer but make the image smoother and more realistic")
                             .font(.footnote)
@@ -105,7 +105,6 @@ struct SwiftUISetupView: View {
                                 }
                             }
                                 .pickerStyle(DefaultPickerStyle())
-//                                .scaledToFill()
                                 .foregroundColor(.white)
                         }
                     }.padding()

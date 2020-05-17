@@ -87,7 +87,7 @@ struct SwiftUIDisplayView: View {
     
 }
 
-// This is the part where I thank the Apple Developer Forums instead of Stack Overflow for once lol
+// Creates a share sheet from within a SwiftUI View
 struct ShareSheet: UIViewControllerRepresentable {
     typealias Callback = (_ activityType: UIActivity.ActivityType?, _ completed: Bool, _ returnedItems: [Any]?, _ error: Error?) -> Void
       
@@ -105,7 +105,5 @@ struct ShareSheet: UIViewControllerRepresentable {
         return controller
     }
       
-    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
-        // nothing to do here
-    }
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) { }
 }

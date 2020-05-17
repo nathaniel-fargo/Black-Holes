@@ -36,10 +36,10 @@ struct SwiftUISetupView: View {
     @State private var ringAngleIndex: Double = 2
     @State private var simulationSpeed: Float = 0.8
     private var ringColors: [ColorBox] = [
-        ColorBox(uiColor: UIColor.red), 
-        ColorBox(uiColor: UIColor.orange), 
+        ColorBox(uiColor: UIColor.red),
+        ColorBox(uiColor: UIColor.orange),
         ColorBox(uiColor: UIColor(red: 1, green: 0.9, blue: 0, alpha: 1)),
-        ColorBox(uiColor: UIColor.green), 
+        ColorBox(uiColor: UIColor.green),
         ColorBox(uiColor: UIColor.cyan),
         ColorBox(uiColor: UIColor.blue),
         ColorBox(uiColor: UIColor(red: 1, green: 0, blue: 1, alpha: 1)),
@@ -92,9 +92,9 @@ struct SwiftUISetupView: View {
                             Slider(value: $ringAngleIndex, in: 0...Double(ringAngleValues.count - 1), step: 1)
                         }
                         HStack {
-                            WhiteText(text: "Simulation Speed: \(Int(simulationSpeed * 5 - 1))")
+                            WhiteText(text: "Simulation Speed: \(Int(simulationSpeed * 5))")
                                 .scaledToFit()
-                            Slider(value: $simulationSpeed, in: 0.4...1.8, step: 0.2)
+                            Slider(value: $simulationSpeed, in: 0.2...1.8, step: 0.2)
                         }
                         WhiteText(text: "Lower values take longer but make the image smoother and more realistic")
                             .font(.footnote)

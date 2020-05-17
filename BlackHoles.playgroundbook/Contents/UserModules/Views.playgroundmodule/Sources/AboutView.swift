@@ -52,11 +52,11 @@ struct SwiftUIAboutView: View {
                         .font(.largeTitle)
                     WhiteText(text: "About")
                         .font(.title)
-                    DescriptiveText("This is what Black Holes might actually look like if gravity didn't bend light")
+                    DescriptiveText("This is what Black Holes would actually look like if gravity didn't bend light")
                     Image(uiImage: #imageLiteral(resourceName: "ModelBlackHole.png"))
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                    DescriptiveText("As the light comes off of the back of the accretion disk, it bends around the black hole, making the illusion that the disk is bent upwards. The same happens for the bottom, as the light goes downwards it bends underneath the black hole towards the viewer. That's why you get the idea that the disk is actually split apart")
+                    DescriptiveText("As the light comes off of the back of the accretion disk, it bends around the black hole, making the illusion that the disk is bent upwards. The same happens for the bottom, as the light goes downwards it bends underneath the black hole towards the viewer. This distortion is why you get the idea that the disk is actually split apart")
                     Image(uiImage: #imageLiteral(resourceName: "BendingBlackHole.png"))
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -83,3 +83,4 @@ struct SwiftUIAboutView: View {
     }
     
 }
+

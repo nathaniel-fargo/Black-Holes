@@ -1,4 +1,9 @@
-//: Welcome to my Playground! In this playground I've created the first Swift-only Black Hole Raycaster. I would love for you to share a little of my passion I've created around black holes, so I encourage you to share your own black hole that you will create!
+/*:
+# **Welcome to my Playground!**
+## In this playground I've created the first Swift-only Black Hole Raycaster  
+**I would love for you to share a little of my passion I've created around black holes, so I encourage you to share your own black hole that you will create!**  
+*If you want to learn more just check out the about page near the bottom of the program.*
+*/
 
 // Because most of the code is modulated, all we need for this page is PlaygroundSupport
 import PlaygroundSupport
