@@ -107,7 +107,7 @@
 		F1C4A1E2246AE88700BB6DB4 = {
 			isa = PBXGroup;
 			children = (
-				F1C4A1ED246AE88700BB6DB4 /* Black Hole Testing */,
+				F1C4A1ED246AE88700BB6DB4 /* Black Holes */,
 				F1C4A1EC246AE88700BB6DB4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F1C4A1ED246AE88700BB6DB4 /* Black Hole Testing */ = {
+		F1C4A1ED246AE88700BB6DB4 /* Black Holes */ = {
 			isa = PBXGroup;
 			children = (
 				F189AB3C246C662300BCC0DE /* Black Hole Testing.entitlements */,
@@ -130,7 +130,7 @@
 				F1C4A203246AE8B300BB6DB4 /* Delegates */,
 				F1C4A202246AE8A200BB6DB4 /* Support */,
 			);
-			path = "Black Hole Testing";
+			path = "Black Holes";
 			sourceTree = "<group>";
 		};
 		F1C4A202246AE8A200BB6DB4 /* Support */ = {
@@ -181,9 +181,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F1C4A1EA246AE88700BB6DB4 /* Black Hole Testing */ = {
+		F1C4A1EA246AE88700BB6DB4 /* Black Holes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1C4A1FF246AE88800BB6DB4 /* Build configuration list for PBXNativeTarget "Black Hole Testing" */;
+			buildConfigurationList = F1C4A1FF246AE88800BB6DB4 /* Build configuration list for PBXNativeTarget "Black Holes" */;
 			buildPhases = (
 				F1C4A1E7246AE88700BB6DB4 /* Sources */,
 				F1C4A1E8246AE88700BB6DB4 /* Frameworks */,
@@ -193,7 +193,7 @@
 			);
 			dependencies = (
 			);
-			name = "Black Hole Testing";
+			name = "Black Holes";
 			productName = "Black Hole Testing";
 			productReference = F1C4A1EB246AE88700BB6DB4 /* Black Hole Render.app */;
 			productType = "com.apple.product-type.application";
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F1C4A1E6246AE88700BB6DB4 /* Build configuration list for PBXProject "Black Hole Testing" */;
+			buildConfigurationList = F1C4A1E6246AE88700BB6DB4 /* Build configuration list for PBXProject "Black Holes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,7 +226,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1C4A1EA246AE88700BB6DB4 /* Black Hole Testing */,
+				F1C4A1EA246AE88700BB6DB4 /* Black Holes */,
 			);
 		};
 /* End PBXProject section */
@@ -449,7 +449,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1C4A1E6246AE88700BB6DB4 /* Build configuration list for PBXProject "Black Hole Testing" */ = {
+		F1C4A1E6246AE88700BB6DB4 /* Build configuration list for PBXProject "Black Holes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1C4A1FD246AE88800BB6DB4 /* Debug */,
@@ -458,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1C4A1FF246AE88800BB6DB4 /* Build configuration list for PBXNativeTarget "Black Hole Testing" */ = {
+		F1C4A1FF246AE88800BB6DB4 /* Build configuration list for PBXNativeTarget "Black Holes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1C4A200246AE88800BB6DB4 /* Debug */,

@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F1C4A1EA246AE88700BB6DB4"
                BuildableName = "Black Hole Render.app"
-               BlueprintName = "Black Hole Testing"
-               ReferencedContainer = "container:Black Hole Testing.xcodeproj">
+               BlueprintName = "Black Holes"
+               ReferencedContainer = "container:Black Holes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,8 +46,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F1C4A1EA246AE88700BB6DB4"
             BuildableName = "Black Hole Render.app"
-            BlueprintName = "Black Hole Testing"
-            ReferencedContainer = "container:Black Hole Testing.xcodeproj">
+            BlueprintName = "Black Holes"
+            ReferencedContainer = "container:Black Holes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F1C4A1EA246AE88700BB6DB4"
             BuildableName = "Black Hole Render.app"
-            BlueprintName = "Black Hole Testing"
-            ReferencedContainer = "container:Black Hole Testing.xcodeproj">
+            BlueprintName = "Black Holes"
+            ReferencedContainer = "container:Black Holes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
