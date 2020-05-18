@@ -52,7 +52,7 @@ struct SwiftUIAboutView: View {
                         .font(.largeTitle)
                     WhiteText(text: "About")
                         .font(.title)
-                    DescriptiveText("This is what Black Holes would actually look like if gravity didn't bend light")
+                    DescriptiveText("This is what Black Holes would actually look like if gravity didn't bend light. The orange ring around the black hole is called the \"Accretion Disk\", it's a cloud of hot gas that surrounds the black hole, slowly feeding it")
                     Image(uiImage: #imageLiteral(resourceName: "ModelBlackHole.png"))
                         .resizable()
                         .aspectRatio(contentMode: .fit)

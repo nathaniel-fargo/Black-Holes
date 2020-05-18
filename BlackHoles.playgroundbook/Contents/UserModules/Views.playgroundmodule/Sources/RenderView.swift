@@ -9,7 +9,8 @@ class RenderView: UIView, CustomView {
     var renderer: UniverseRenderer!
     var options: UniverseOptions!
     // Shows loading
-    var loaderView: UILabel!
+    var loaderLabel: UILabel!
+    var cancelButton: UIButton!
     var raysToLoad: Int!
     var iterations: Int = 0
     var runTimer: Timer?
@@ -18,13 +19,23 @@ class RenderView: UIView, CustomView {
         self.delegate = delegate
         self.options = options
         backgroundColor = .black
-        loaderView = UILabel(frame: frame)
-        loaderView.textColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
-        loaderView.numberOfLines = 3
-        loaderView.textAlignment = .center
-        loaderView.text = "Creating Universe..."
-        loaderView.font = .monospacedSystemFont(ofSize: 30, weight: .bold)
-        addSubview(loaderView)
+        loaderLabel = UILabel(frame: CGRect(x: frame.origin.x, y: frame.origin.y, width: frame.width, height: frame.height / 2))
+        loaderLabel.textColor = UIColor.white
+        loaderLabel.numberOfLines = 3
+        loaderLabel.textAlignment = .center
+        loaderLabel.text = "Creating Universe..."
+        loaderLabel.font = .monospacedSystemFont(ofSize: 30, weight: .bold)
+        addSubview(loaderLabel)
+        let width: CGFloat = 100
+        let height: CGFloat = 50
+        cancelButton = UIButton(frame: CGRect(x: frame.origin.x + frame.width / 2 - width / 2, y: frame.origin.y + frame.height * 3 / 4 - height / 2, width: width, height: height))
+        cancelButton.setTitle("Cancel", for: .normal)
+        cancelButton.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        cancelButton.setTitleColor(UIColor(red: 0.01, green: 0.5, blue: 0.9, alpha: 1), for: .normal)
+        cancelButton.backgroundColor = UIColor.white
+        cancelButton.layer.cornerRadius = height / 2
+        cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
+        addSubview(cancelButton)
         DispatchQueue.main.async {
             self.createUniverse()
         }
@@ -37,9 +48,9 @@ class RenderView: UIView, CustomView {
     }
     func updateUI() {
         if (universe.status == .finished) {
-            loaderView.text = "Creating Final Image..."
+            loaderLabel.text = "Creating Final Image..."
         } else {
-            loaderView.text = "Frame: \(iterations)\n\(universe.deadRays.count)/\(raysToLoad!) rays loaded"
+            loaderLabel.text = "Frame: \(iterations)\n\(universe.deadRays.count)/\(raysToLoad!) rays loaded"
         }
     }
     @objc func update() {
@@ -54,11 +65,15 @@ class RenderView: UIView, CustomView {
             self.updateUI()
         }
     }
+    @objc func cancel() {
+        runTimer?.invalidate()
+        delegate.loadSetupView()
+    }
     func runLoop () {
         runTimer = Timer(timeInterval: 0.01, target: self, selector: #selector(update), userInfo: nil, repeats: true)
         RunLoop.current.add(runTimer!, forMode: .default)
     }
     func updateFrame() {
-        loaderView.frame = frame
+        loaderLabel.frame = frame
     }
 }
