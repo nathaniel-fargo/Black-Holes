@@ -10,6 +10,8 @@ body {
     font-family: josefin;
 }
 h1 {
+    margin: 0;
+    padding: 0;
     color: rgb(238, 233, 227);
 }
 a {
@@ -39,6 +41,8 @@ hr {
     border-style: solid;
     border-width: 2px;
     border-radius: 2px;
+    padding: 0;
+    margin: 0;
 }
 footer {
     background-color: rgb(8, 8, 8);
@@ -47,19 +51,53 @@ footer {
     display: block;
     width: 100%;
 }
-.main-image {
+nav {
+    /* display: block */
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    box-shadow: white 10px 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    font-size: 30px;
+    padding: 15px;
+    color: white;
+    font-family: roboto-slab;
+}
+.background-image {
     background-position: center;
     background-size: cover;
 }
-.main-image.abstract {
+.darken {
+    background: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+}
+.background-image.abstract {
     background-image: url("../images/abstract-black-hole.jpg");
 }
-.main-image.realistic {
+.background-image.realistic {
     background-image: url("../images/realistic-black-hole.gif");
+}
+.background-image.galaxy {
+    background-image: url("../images/galaxy3.jpg");
 }
 .header-text {
     font-family: space-mono;
     font-weight: bold;
+}
+.padding {
+    padding: 1rem;
 }
 .footer-text {
     margin: 0;
@@ -123,6 +161,12 @@ footer {
     max-width: 95%;
     width: 1200px;
     margin: 0 auto;
+}
+.container-fluid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 @media screen and (max-width: 1200px) {
     .container {
