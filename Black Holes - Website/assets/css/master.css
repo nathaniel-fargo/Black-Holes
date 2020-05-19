@@ -52,13 +52,13 @@ footer {
     width: 100%;
 }
 nav {
-    /* display: block */
+    display: block;
     width: 100%;
     background-color: black;
     margin: 0;
-    padding: 0;
-    height: 60px;
-    box-shadow: white 10px 10px;
+    padding: 10px 0;
+    height: 50px;
+    box-shadow: white 10px 0 5px;
 }
 nav ul {
     list-style-type: none;
@@ -69,9 +69,10 @@ nav ul li {
     float: left;
 }
 nav ul li a {
-    display: block;
+    display: inline;
     font-size: 30px;
-    padding: 15px;
+    vertical-align: middle;
+    padding: 0 15px;
     color: white;
     font-family: roboto-slab;
 }
@@ -166,7 +167,6 @@ nav ul li a {
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 @media screen and (max-width: 1200px) {
     .container {
