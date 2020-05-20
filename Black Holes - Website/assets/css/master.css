@@ -57,24 +57,25 @@ nav {
     background-color: black;
     margin: 0;
     padding: 10px 0;
-    height: 50px;
-    box-shadow: white 10px 0 5px;
+    height: 30px;
+    box-shadow: white 0 0 5px;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-nav ul li {
+nav li {
     float: left;
 }
-nav ul li a {
+nav a, nav a:hover {
     display: inline;
-    font-size: 30px;
+    font-size: 20px;
     vertical-align: middle;
     padding: 0 15px;
     color: white;
     font-family: roboto-slab;
+    text-decoration: none;
 }
 .background-image {
     background-position: center;
@@ -87,11 +88,17 @@ nav ul li a {
 .background-image.abstract {
     background-image: url("../images/abstract-black-hole.jpg");
 }
+.background-image.abstract1 {
+    background-image: url("../images/abstract-black-hole1.jpg");
+}
 .background-image.realistic {
     background-image: url("../images/realistic-black-hole.gif");
 }
 .background-image.galaxy {
     background-image: url("../images/galaxy3.jpg");
+}
+.background-image.futuristic {
+    background-image: url("../images/futuristic-black-hole.jpg");
 }
 .header-text {
     font-family: space-mono;
@@ -142,10 +149,10 @@ nav ul li a {
     overflow: hidden;
 }
 .image-content-box .image-content {
+    background: black;
     overflow: hidden;
     width: 70%;
     text-align: center;
-    height: 100%;
     vertical-align: middle;
 }
 .image-content-box .text-content {
