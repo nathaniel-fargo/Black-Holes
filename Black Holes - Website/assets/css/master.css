@@ -57,7 +57,8 @@ nav {
     background-color: black;
     margin: 0;
     padding: 10px 0;
-    height: 30px;
+    /* min-height: 30px; */
+    /* height: fit-content; */
     box-shadow: white 0 0 5px;
 }
 nav ul {
@@ -66,10 +67,9 @@ nav ul {
     padding: 0;
 }
 nav li {
-    float: left;
+    display: inline;
 }
 nav a, nav a:hover {
-    display: inline;
     font-size: 20px;
     vertical-align: middle;
     padding: 0 15px;
@@ -106,6 +106,15 @@ nav a, nav a:hover {
 }
 .padding {
     padding: 1rem;
+}
+.padding-1 {
+    padding: 2rem;
+}
+.padding-2 {
+    padding: 3rem;
+}
+.padding-3 {
+    padding: 4rem;
 }
 .footer-text {
     margin: 0;
@@ -164,10 +173,10 @@ nav a, nav a:hover {
 .image-content img {
     margin: 0 auto;
     max-height: 500px;
+    max-width: 100%;
 }
 .container {
-    max-width: 95%;
-    width: 1200px;
+    width: 1150px;
     margin: 0 auto;
 }
 .container-fluid {
@@ -182,7 +191,7 @@ nav a, nav a:hover {
 }
 @media screen and (max-width: 992px) {
     .container {
-        width: 768px;
+        width: 750px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -195,7 +204,7 @@ nav a, nav a:hover {
         order: 1;
     }
     .container {
-        width: 600px;
+        width: 550px;
     }
 }
 @media screen and (max-width: 600px) {
